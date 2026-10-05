@@ -1,0 +1,12 @@
+{
+  "note": "The files in model/services/ are byte-for-byte copies from the CropGuard source at this commit. adapter.py is specific to this site.",
+  "sourceCommit": "fb75a4aa829ccf3e61152d31226f612068bb3f91",
+  "sha256": {
+    "application/services/__init__.py": "d513bac120837594ff27d6d920cd7a58048b57697435c9951c956e0127d701b2",
+    "application/services/simulation.py": "35d78c9845a0c3b8114f0fe0dc9b26d2f9d14e80fc5e9298c781609b55cbe7a9",
+    "application/services/gamma_model.py": "d5496d5ade71bf29bff1a89c10217b773b16347985cce2d3aef2f97f8ddda1d4",
+    "application/services/actuarial.py": "5933b75835566d3ac382660cf992a5f9b5d957c447ee0652b6cd1f5536de1b62",
+    "application/services/pricing.py": "08dad2a4aca5bd823ebd41b67cc387be2a5e2f2ced2e2f151be3f8cec406e517",
+    "application/services/weather.py": "b98d04b40d94f2122a9d19f8081956b7a7de25449e7e4c0e0cbce7cc90a7844c"
+  }
+}

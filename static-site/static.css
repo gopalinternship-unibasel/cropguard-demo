@@ -1,0 +1,7 @@
+/* Browser-only edition: there is no presenter account, so the sign-in controls are not shown. */
+#hosted-login-form,#hosted-logout{display:none!important}
+.static-edition-links{font-size:13px;margin:12px 0 0}
+.static-edition-links a{color:inherit;font-weight:600}
+#static-model-status{margin:10px 0 0}
+#static-model-status.error{color:var(--error)}
+footer .static-attribution{flex-basis:100%;font-size:11px;opacity:.8;margin-top:6px}

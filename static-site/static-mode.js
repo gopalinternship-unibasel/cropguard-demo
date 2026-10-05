@@ -11,12 +11,12 @@ if (control && button) {
   note.id = 'static-model-status';
   note.className = 'small';
   note.setAttribute('role', 'status');
-  note.textContent = 'The pricing model runs in your browser. The first run downloads it once (about 12 MB).';
+  note.textContent = 'The pricing model runs in your browser. The first run downloads it once (about 6 MB).';
   button.insertAdjacentElement('afterend', note);
   window.addEventListener('cropguard:static-model', event => {
     const {state, python, message} = event.detail;
     note.classList.toggle('error', state === 'error');
-    note.textContent = state === 'loading' ? 'Loading the pricing model into your browser (about 12 MB, first time only)…'
+    note.textContent = state === 'loading' ? 'Loading the pricing model into your browser (about 6 MB, first time only)…'
       : state === 'ready' ? `Pricing model ready in your browser (Python ${python}). Results are computed on this device.`
       : `The pricing model could not be loaded. ${message ?? ''} Check your connection and run the simulation again.`;
   });

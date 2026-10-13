@@ -4,8 +4,6 @@
 
 CropGuard demonstrates rainfall-index crop insurance for a research grid point at Adama, Ethiopia. This repository holds the published site only. It is a static site served by GitHub Pages: there is no server, no account and no database, and nothing you do on it is sent anywhere.
 
-The full demonstration, with a live private test blockchain shared by all viewers, runs at https://cropguard-era5-demo-production.up.railway.app.
-
 ## What is real, what is computed, what is recorded
 
 | Part | What you are looking at |

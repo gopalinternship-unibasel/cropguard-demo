@@ -3,3 +3,23 @@
 #static-model-status{margin:10px 0 0}
 #static-model-status.error{color:var(--error)}
 footer .static-attribution{flex-basis:100%;font-size:11px;opacity:.8;margin-top:6px}
+/* Celo Sepolia test round, read from the public test chain by static-site/onchain.js. */
+/* The page hides everything on this view except the guided demo; the test round belongs beside it. */
+html[data-cropguard-mode] body #page-operations>#onchain-round{display:block!important;margin-top:38px}
+#onchain-round .onchain-status{font-size:12px;line-height:1.6;color:var(--muted);margin:-8px 0 22px}
+#onchain-round .onchain-status.error{color:var(--warning)}
+.onchain-checks{list-style:none;padding:0;margin:0 0 18px;font-size:12px;line-height:1.6}
+.onchain-checks li{display:flex;gap:10px;padding:8px 0;border-bottom:1px solid var(--line)}
+.onchain-checks li>span{flex:none;width:14px;font-weight:600;color:var(--muted)}
+.onchain-checks li>div{min-width:0}
+.onchain-checks li.ok>span{color:var(--forest)}
+.onchain-checks li.bad>span{color:var(--error)}
+.onchain-list{list-style:none;padding:0;margin:0;font-size:12px;line-height:1.6;counter-reset:onchain-step}
+.onchain-list li{display:flex;justify-content:space-between;gap:14px;padding:8px 0;border-bottom:1px solid var(--line);counter-increment:onchain-step}
+.onchain-list li>span::before{content:counter(onchain-step) ". ";color:var(--muted)}
+.onchain-list a,.onchain-contracts a,.onchain-checks a{color:var(--forest)}
+.onchain-list a,.onchain-contracts a{font-family:ui-monospace,Consolas,monospace;font-size:11px;overflow-wrap:anywhere;text-align:right}
+.onchain-contracts{font-size:12px;line-height:1.6}
+.onchain-contracts div{display:flex;justify-content:space-between;gap:14px;padding:7px 0;border-bottom:1px solid var(--line);min-width:0}
+.onchain-note{font-size:12px;line-height:1.65;color:var(--muted);margin:16px 0 0}
+@media (max-width:700px){.onchain-contracts div,.onchain-list li{flex-direction:column;gap:2px}.onchain-list a,.onchain-contracts a{text-align:left}}

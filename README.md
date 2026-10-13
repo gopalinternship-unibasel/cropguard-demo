@@ -12,6 +12,7 @@ CropGuard demonstrates rainfall-index crop insurance for a research grid point a
 | Pricing lab | Computed in your browser. The project's own Python model files run on [Pyodide](https://pyodide.org) (Python compiled to WebAssembly). The Gamma rainfall trials are simulations, not observations. |
 | Guided demo | Recorded. Each of the nine steps replays the response that a real run produced on a private test blockchain (Anvil, chain 31337) on 5 October 2026, run `20261005T042357Z-06e044fe6a64`. Nothing is executed while you click, and each browser tab has its own replay. |
 | Tokens and payments | Valueless test tokens. No money, no insurance cover, no offer. |
+| Celo Sepolia test round | Read from a public test chain each time the page loads. The same two-hectare policy was run once on Celo Sepolia on 13 October 2026. Its rainfall report came from CropGuard's Chainlink CRE workflow, run in Chainlink's simulator on one computer and sent through Chainlink's mock forwarder contract. No Chainlink oracle network took part, and the mock forwarder checks no signatures. |
 
 The 2023 season used in the guided demo is one of the seasons the model was fitted on, so it is an illustration and not an out-of-sample test.
 
@@ -32,6 +33,8 @@ The 2023 season used in the guided demo is one of the seasons the model was fitt
 | `model/services/` | The pricing model: byte-for-byte copies from the CropGuard source at commit `fb75a4a` (hashes in `model/SOURCE.json`). |
 | `data/replay.json`, `data/files/` | The recorded run: every public response before and after each step, including the archived rainfall evidence. |
 | `data/model-inputs.json` | The verified monthly ERA5-Land history the model reads. |
+| `static-site/onchain.js`, `data/onchain-round.json` | The test-round panel on the Guided demo page and the public record of that round: contract addresses, transaction hashes and the figures the page compares with the chain. |
+| `api/weather/oracle/` | The frozen rainfall evidence file the workflow fetched: 122 daily ERA5-Land values for June to September 2023 with their hashes. Its path and bytes must not change. |
 | `pyodide/` | Pyodide 0.29.5, unmodified. |
 
 ## Credits and licences

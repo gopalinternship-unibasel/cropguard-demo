@@ -1,0 +1,173 @@
+{
+ "schemaVersion": 1,
+ "chainId": 11142220,
+ "chainName": "Celo Sepolia",
+ "rpcUrl": "https://forno.celo-sepolia.celo-testnet.org",
+ "explorerUrl": "https://celo-sepolia.blockscout.com",
+ "tokenSymbol": "CGTEST",
+ "completedOn": "13 October 2026",
+ "testOnly": true,
+ "realMoney": false,
+ "realChainlinkDon": false,
+ "chainlinkCreSimulation": true,
+ "oracleMode": "chainlink_cre_workflow_local_simulation_via_mock_forwarder",
+ "notice": "On 13 October 2026 this policy was run once on Celo Sepolia, a public test network. The rainfall figure was computed by CropGuard's Chainlink CRE workflow from the frozen evidence file on this site. The workflow ran in Chainlink's simulator on one computer and sent its report through Chainlink's mock forwarder contract. No Chainlink oracle network took part, and the mock forwarder checks no signatures, so this shows the data path, not oracle security. The tokens have no value and this is not insurance.",
+ "contractNote": "The six CropGuard contracts are test-only variants: a free test token instead of USDC and a 60-second challenge period instead of three days. TestController only fills the resolver slot and was never configured, so a disputed report could not have been resolved in this round. One test key holds every role.",
+ "thresholdMmX1000": 170678,
+ "contracts": {
+  "OracleAdapter": "0xCd3b7Bdf1cf8781172076B531EA4a99dc173433c",
+  "ProductRegistry": "0x53df29dF285ba2E5D9D783f1cD40272e1eEa5129",
+  "RiskPoolVault": "0x7F670D47af02177BB9CC5D27e6bA4227B009E9FE",
+  "PolicyManager": "0x100aDa54bE86A50840dD2F2D1e987897EF46626E",
+  "Settlement": "0xe399c38590488c054580e8418485eE61Dd2aF276",
+  "AccessRegistry": "0xCDdcD6fbFf469C0A6d44c92d0C04E4906F07Da78",
+  "TestToken": "0x62BA180c211496F8F2df7163b491D615eA613399",
+  "TestController": "0x7cA78f00e2DD6B0e2F5CFfA3FCC4DBfF8FA7CfdE",
+  "Chainlink mock forwarder": "0x6E9EE680ef59ef64Aa8C7371279c27E496b5eDc1"
+ },
+ "transactions": [
+  {
+   "label": "Pool funded with 15,000 test tokens",
+   "hash": "0x8d236eef4f210c04a2bd73fe9174ba58df0d4dace609fa7fb3fb3a5f9736ca88"
+  },
+  {
+   "label": "Two-unit policy bought",
+   "hash": "0xc250a3768978564e3e99f4d7183f49a0eeeb6fdc617f1cb3691a148003e10c44"
+  },
+  {
+   "label": "Rainfall reported by the simulated CRE workflow",
+   "hash": "0xbd0946d0837bdc81c608a861cc12dffc44de724607157423c91fc0611ec60fce"
+  },
+  {
+   "label": "Observation finalized after the challenge period",
+   "hash": "0xce626aa55c823eacaf94b761896d17e815f054c6a244929fc71c83215577ccf6"
+  },
+  {
+   "label": "Policy settled",
+   "hash": "0xec64e56236e5fbf47cfcf6cffd5b43e9484f616ff929bff9c65b085aa6e7a94e"
+  },
+  {
+   "label": "Payout sent to the policyholder",
+   "hash": "0x17fe9fc3e0c160cb8d9f975064e8cdc468d4f990b0d2aca8e6cbd6e4ef40eaaa"
+  }
+ ],
+ "reads": {
+  "getObservation": "0xb67c28bd4425f0670c9d2530abefae8e79a0c4fcc51f6fb8c173b46b4eae1b93632d76a2",
+  "getPolicy": "0x2b07fce30000000000000000000000000000000000000000000000000000000000000001",
+  "capitalAssets": "0x6e9ccf0a",
+  "accruedFees": "0x682c2058",
+  "lockedCollateral": "0xb952cc4a",
+  "accountingHealthy": "0x98dda7da"
+ },
+ "evidence": {
+  "path": "api/weather/oracle/0xf7eab9ff5511a98ba67dac9c2b5782ecb88e98fa517f8b37031d5776a82aaa13",
+  "indexHash": "0xf7eab9ff5511a98ba67dac9c2b5782ecb88e98fa517f8b37031d5776a82aaa13",
+  "url": "https://gopalinternship-unibasel.github.io/cropguard-demo/api/weather/oracle/0xf7eab9ff5511a98ba67dac9c2b5782ecb88e98fa517f8b37031d5776a82aaa13",
+  "bundleSha256": "0x9bc8a93ce0f877f2afe984cd0e5b2ff3e0b7dc9b2bee584eb10da796c2ca09a9",
+  "sourceDataset": "0x933d108f2a99e3fc59bb66996877db512723be790e1e80aad2a5f037a2c2a2bc",
+  "rainfallMmX1000": "161524",
+  "evidenceHash": "0x549af3ef8c7f001301cf39363df8324c7f290a70dc81a0ac63f5060b92012d17",
+  "sourceHash": "0xf3e4fa6194c4b6ea9e4005a1a60a1519f160eb7534028b1f8cef119638e32df6"
+ },
+ "expected": {
+  "rainfallMmX1000": "161524",
+  "observationState": 3,
+  "decision": 1,
+  "payout": "300000000",
+  "premiumPaid": "60945000",
+  "units": 2,
+  "policyState": 3,
+  "poolCapitalAfter": "14758945000",
+  "accruedFees": "2000000"
+ },
+ "observationKey": "0x4425f0670c9d2530abefae8e79a0c4fcc51f6fb8c173b46b4eae1b93632d76a2",
+ "specificationHash": "0x597cc953d5d247e3fb38eb7925dbcada32f377fc71ffc1f7a411034f5e52f3bf",
+ "specification": {
+  "schemaVersion": 3,
+  "mode": "historical_replay_test_only",
+  "index": {
+   "country": "ETH",
+   "provider": "era5_land_timeseries",
+   "siteId": "ET_ADAMA",
+   "latitudeE6": 8540000,
+   "longitudeE6": 39270000,
+   "parameter": "total_precipitation",
+   "unit": "mm",
+   "scale": 1000,
+   "startMonth": "2023-06",
+   "endMonthExclusive": "2023-10",
+   "aggregationConvention": "UTC_daily_mm_6dp_sum_monthly_round_half_up_0.001mm",
+   "extractionVersion": "ethiopia-point-rainfall-v1",
+   "temporalConvention": "hourly_incremental",
+   "adapterBases": [
+    "https://gopalinternship-unibasel.github.io/cropguard-demo/api/weather/oracle"
+   ],
+   "adapterTrustAcknowledged": true,
+   "replayNotice": "TEST ONLY. Historical replay of ERA5-Land June-September 2023 rainfall at the Adama research grid point inside a short Celo Sepolia test round. The season lies inside the pricing calibration sample, so this is an illustration and not an out-of-sample test. Valueless test tokens; not insurance."
+  },
+  "fullPayoutOnFailure": true,
+  "coverageStart": "1791927009",
+  "coverageEnd": "1791927069",
+  "reportNotBefore": "1791927069",
+  "reportDeadline": "1792013469",
+  "challengePeriod": "60",
+  "resolutionDeadline": "1792099869"
+ },
+ "schedule": {
+  "fundingClose": 1791926829,
+  "salesClose": 1791927009,
+  "coverageStart": 1791927009,
+  "coverageEnd": 1791927069,
+  "reportNotBefore": 1791927069,
+  "reportDeadline": 1792013469,
+  "challengePeriod": 60,
+  "resolutionDeadline": 1792099869
+ },
+ "pricing": {
+  "premiumPerUnit": "30472500",
+  "maximumPerUnit": "150000000",
+  "feePerUnit": "1000000",
+  "thresholdMmX1000": 170678,
+  "maximumExposure": "15000000000",
+  "policyUnits": 2
+ },
+ "termsText": "CropGuard Celo Sepolia TEST ONLY: valueless CGTEST; ERA5-Land June-September 2023 rainfall at Adama replayed in a short test round; threshold 170.678 mm; premium 30.4725 / payout 150 / fee 1 per unit; rainfall report delivered by the CropGuard CRE workflow run in Chainlink's local simulator through the MockKeystoneForwarder, not by a Chainlink DON; no real insurance; failure defaults to full payout.",
+ "termsHash": "0xefd6ffc66536cb0f2e65c4e128c9b1cb3bf9c55beaa50974bc8d0a9838a6c88d",
+ "report": {
+  "transactionHash": "0xbd0946d0837bdc81c608a861cc12dffc44de724607157423c91fc0611ec60fce",
+  "blockNumber": 38643635,
+  "sender": "0x6B35e017BF57B6398BBdE6fF7FfcD5cE8beFa3D2",
+  "to": "0x6E9EE680ef59ef64Aa8C7371279c27E496b5eDc1",
+  "gasUsed": 193051,
+  "feeWei": "10135177500000000",
+  "rainfallMmX1000": "161524",
+  "proposedAt": 1791927623,
+  "challengeEndsAt": 1791927683,
+  "observedAt": 1791927617,
+  "evidenceHash": "0x549af3ef8c7f001301cf39363df8324c7f290a70dc81a0ac63f5060b92012d17",
+  "sourceHash": "0xf3e4fa6194c4b6ea9e4005a1a60a1519f160eb7534028b1f8cef119638e32df6",
+  "deliveredBy": "cre workflow simulate --broadcast (Chainlink CRE local simulator), through the MockKeystoneForwarder"
+ },
+ "simulatedWorkflow": {
+  "workflowId": "0x1111111111111111111111111111111111111111111111111111111111111111",
+  "workflowOwner": "0xaAaAaAaaAaAaAaaAaAAAAAAAAaaaAaAaAaaAaaAa",
+  "note": "Fixed placeholder identity that Chainlink's simulator puts into every simulated report.",
+  "wasmSha256": "5aa8bab6f1a60294c3554cc196406666d2f3fc7a7785e67524cae958eb81cdd2",
+  "creSdk": "1.7.0",
+  "creCli": "1.34.0"
+ },
+ "deployer": "0x6B35e017BF57B6398BBdE6fF7FfcD5cE8beFa3D2",
+ "deployedAtBlock": 38642317,
+ "verifiedAtBlock": 38643723,
+ "totalGasUsed": 10309669,
+ "totalFeeWei": "541257622500000000",
+ "warnings": [
+  "Test tokens have no monetary value",
+  "The rainfall report is a Chainlink CRE simulation run on one computer, not a Chainlink DON execution",
+  "The MockKeystoneForwarder verifies no signatures; anyone could submit a report through it",
+  "Replay of the 2023 season, which lies inside the pricing calibration sample",
+  "Test administration is a single test key, not an independent multisignature Safe",
+  "TestController is an unconfigured resolver placeholder; no dispute resolution exists in this round",
+  "Minimum test challenge period is 60 seconds"
+ ]
+}

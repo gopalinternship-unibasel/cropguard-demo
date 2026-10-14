@@ -5,55 +5,54 @@
  "rpcUrl": "https://forno.celo-sepolia.celo-testnet.org",
  "explorerUrl": "https://celo-sepolia.blockscout.com",
  "tokenSymbol": "CGTEST",
- "completedOn": "13 October 2026",
+ "completedOn": "14 October 2026",
  "testOnly": true,
  "realMoney": false,
  "realChainlinkDon": false,
  "chainlinkCreSimulation": true,
  "oracleMode": "chainlink_cre_workflow_local_simulation_via_mock_forwarder",
- "siteContext": "This round ran on 13 October 2026, before the site switched to the team's rainfall series. It used the earlier Adama grid-point series: 161.524 mm for June to September 2023 against a 170.678 mm trigger, at 30.4725 test tokens per unit. An on-chain record cannot be changed afterwards, so it is kept here as it was. The guided demo above uses the team's series: 140.501 mm against a 297.289 mm trigger.",
- "notice": "On 13 October 2026 this policy was run once on Celo Sepolia, a public test network. The rainfall figure was computed by CropGuard's Chainlink CRE workflow from the frozen evidence file on this site. The workflow ran in Chainlink's simulator on one computer and sent its report through Chainlink's mock forwarder contract. No Chainlink oracle network took part, and the mock forwarder checks no signatures, so this shows the data path, not oracle security. The tokens have no value and this is not insurance.",
+ "notice": "On 14 October 2026 this policy was run once on Celo Sepolia, a public test network. The rainfall figure was computed by CropGuard's Chainlink CRE workflow from the frozen evidence file on this site. The workflow ran in Chainlink's simulator on one computer and sent its report through Chainlink's mock forwarder contract. No Chainlink oracle network took part, and the mock forwarder checks no signatures, so this shows the data path, not oracle security. The tokens have no value and this is not insurance.",
  "contractNote": "The six CropGuard contracts are test-only variants: a free test token instead of USDC and a 60-second challenge period instead of three days. TestController only fills the resolver slot and was never configured, so a disputed report could not have been resolved in this round. One test key holds every role.",
- "thresholdMmX1000": 170678,
+ "thresholdMmX1000": 297289,
  "contracts": {
-  "OracleAdapter": "0xCd3b7Bdf1cf8781172076B531EA4a99dc173433c",
-  "ProductRegistry": "0x53df29dF285ba2E5D9D783f1cD40272e1eEa5129",
-  "RiskPoolVault": "0x7F670D47af02177BB9CC5D27e6bA4227B009E9FE",
-  "PolicyManager": "0x100aDa54bE86A50840dD2F2D1e987897EF46626E",
-  "Settlement": "0xe399c38590488c054580e8418485eE61Dd2aF276",
-  "AccessRegistry": "0xCDdcD6fbFf469C0A6d44c92d0C04E4906F07Da78",
-  "TestToken": "0x62BA180c211496F8F2df7163b491D615eA613399",
-  "TestController": "0x7cA78f00e2DD6B0e2F5CFfA3FCC4DBfF8FA7CfdE",
+  "OracleAdapter": "0x7A9a46834d5CC85163f26cD6Dc606062eD0B1319",
+  "ProductRegistry": "0x558F910DB4d5F77Bca0999C0331a4adD7dB02de9",
+  "RiskPoolVault": "0x666a8469D8f3141B52A15CC8DE68B1f40afF00a6",
+  "PolicyManager": "0x25e53d8B967B979A8FaD584969bB56E04d9eC756",
+  "Settlement": "0x458A1B1b2aA1c64f34f40df59A32d2034352117A",
+  "AccessRegistry": "0x0f55191d47E37D635702f2Db6C48B5CA95482A7b",
+  "TestToken": "0xD431E9175cbb6A8e91855D5cd9622757B1C8d12d",
+  "TestController": "0x4bA5C4Eff8016ED1A3C3a47d112CB965eD966b14",
   "Chainlink mock forwarder": "0x6E9EE680ef59ef64Aa8C7371279c27E496b5eDc1"
  },
  "transactions": [
   {
    "label": "Pool funded with 15,000 test tokens",
-   "hash": "0x8d236eef4f210c04a2bd73fe9174ba58df0d4dace609fa7fb3fb3a5f9736ca88"
+   "hash": "0xdd7eea31c39aeee6b2845515f75e7f8f4e4708c065244c468ba16700129229cf"
   },
   {
    "label": "Two-unit policy bought",
-   "hash": "0xc250a3768978564e3e99f4d7183f49a0eeeb6fdc617f1cb3691a148003e10c44"
+   "hash": "0x4632a27f36fc2ccb09d54e7255c24b3d2c79f35e7e41f3d7bbdd43a3627974b1"
   },
   {
    "label": "Rainfall reported by the simulated CRE workflow",
-   "hash": "0xbd0946d0837bdc81c608a861cc12dffc44de724607157423c91fc0611ec60fce"
+   "hash": "0x6ba2efc47ef7ec003f7b2eaa155bb4246cde6deea4ca2568fc042a4decf1d2d7"
   },
   {
    "label": "Observation finalized after the challenge period",
-   "hash": "0xce626aa55c823eacaf94b761896d17e815f054c6a244929fc71c83215577ccf6"
+   "hash": "0xfa5de68070d7d3ab441e658b9040cb6af51847e6a1ef9b3223119175d34d8d23"
   },
   {
    "label": "Policy settled",
-   "hash": "0xec64e56236e5fbf47cfcf6cffd5b43e9484f616ff929bff9c65b085aa6e7a94e"
+   "hash": "0xe46bfa9de31f77c13ac14d8824268e1b9bb31b41a7c5c0f0904a58ad80180bdd"
   },
   {
    "label": "Payout sent to the policyholder",
-   "hash": "0x17fe9fc3e0c160cb8d9f975064e8cdc468d4f990b0d2aca8e6cbd6e4ef40eaaa"
+   "hash": "0x8255ee460357cb91ec68a775b2e107311802b7ce7d0820c7833044ccd27bdfc0"
   }
  ],
  "reads": {
-  "getObservation": "0xb67c28bd4425f0670c9d2530abefae8e79a0c4fcc51f6fb8c173b46b4eae1b93632d76a2",
+  "getObservation": "0xb67c28bd0e7c12b55a6aa469f49a2230dd8b6545cfe2ba82514326b7e0887168a6bec13a",
   "getPolicy": "0x2b07fce30000000000000000000000000000000000000000000000000000000000000001",
   "capitalAssets": "0x6e9ccf0a",
   "accruedFees": "0x682c2058",
@@ -61,107 +60,109 @@
   "accountingHealthy": "0x98dda7da"
  },
  "evidence": {
-  "path": "api/weather/oracle/0xf7eab9ff5511a98ba67dac9c2b5782ecb88e98fa517f8b37031d5776a82aaa13",
-  "indexHash": "0xf7eab9ff5511a98ba67dac9c2b5782ecb88e98fa517f8b37031d5776a82aaa13",
-  "url": "https://gopalinternship-unibasel.github.io/cropguard-demo/api/weather/oracle/0xf7eab9ff5511a98ba67dac9c2b5782ecb88e98fa517f8b37031d5776a82aaa13",
-  "bundleSha256": "0x9bc8a93ce0f877f2afe984cd0e5b2ff3e0b7dc9b2bee584eb10da796c2ca09a9",
-  "sourceDataset": "0x933d108f2a99e3fc59bb66996877db512723be790e1e80aad2a5f037a2c2a2bc",
-  "rainfallMmX1000": "161524",
-  "evidenceHash": "0x549af3ef8c7f001301cf39363df8324c7f290a70dc81a0ac63f5060b92012d17",
-  "sourceHash": "0xf3e4fa6194c4b6ea9e4005a1a60a1519f160eb7534028b1f8cef119638e32df6"
+  "path": "api/weather/oracle/0x3c303a1640de8765e8fb26925167b0a30c4c1da70bf457b2c60dd4e0658421c9",
+  "indexHash": "0x3c303a1640de8765e8fb26925167b0a30c4c1da70bf457b2c60dd4e0658421c9",
+  "url": "https://gopalinternship-unibasel.github.io/cropguard-demo/api/weather/oracle/0x3c303a1640de8765e8fb26925167b0a30c4c1da70bf457b2c60dd4e0658421c9",
+  "bundleSha256": "0x16dee521f87d63a89dbd4cb14e8ea8200c180ebb9ac2dd0e11de75a05e10dd37",
+  "sourceDataset": "0x17144158a4e375dcf340ffd76d9841ed27d30c9bbd4b64725cb2610809c46dc6",
+  "rainfallMmX1000": "140501",
+  "evidenceHash": "0xcc20679051a4b96ab20bf074eeeda5d2bbcb051f85adf968b56b11f77b04f38c",
+  "sourceHash": "0x8133dd43d703aad0dbfd73843d27a91bb9ef64b7a842c9a2d526566974c1467d"
  },
  "expected": {
-  "rainfallMmX1000": "161524",
+  "rainfallMmX1000": "140501",
   "observationState": 3,
   "decision": 1,
   "payout": "300000000",
-  "premiumPaid": "60945000",
+  "premiumPaid": "60351000",
   "units": 2,
   "policyState": 3,
-  "poolCapitalAfter": "14758945000",
+  "poolCapitalAfter": "14758351000",
   "accruedFees": "2000000"
  },
- "observationKey": "0x4425f0670c9d2530abefae8e79a0c4fcc51f6fb8c173b46b4eae1b93632d76a2",
- "specificationHash": "0x597cc953d5d247e3fb38eb7925dbcada32f377fc71ffc1f7a411034f5e52f3bf",
+ "observationKey": "0x0e7c12b55a6aa469f49a2230dd8b6545cfe2ba82514326b7e0887168a6bec13a",
+ "specificationHash": "0xb44dfb39bec7659c5c7b2911068e10037ebb381ef6da1fbccf667a66a560eea2",
  "specification": {
   "schemaVersion": 3,
   "mode": "historical_replay_test_only",
   "index": {
    "country": "ETH",
-   "provider": "era5_land_timeseries",
-   "siteId": "ET_ADAMA",
-   "latitudeE6": 8540000,
-   "longitudeE6": 39270000,
+   "provider": "era5_land_monthly",
+   "siteId": "ET_TEAM_BOX",
+   "northE6": 15000000,
+   "southE6": 3000000,
+   "westE6": 33000000,
+   "eastE6": 48000000,
    "parameter": "total_precipitation",
    "unit": "mm",
    "scale": 1000,
    "startMonth": "2023-06",
    "endMonthExclusive": "2023-10",
-   "aggregationConvention": "UTC_daily_mm_6dp_sum_monthly_round_half_up_0.001mm",
-   "extractionVersion": "ethiopia-point-rainfall-v1",
-   "temporalConvention": "hourly_incremental",
+   "aggregationConvention": "unweighted_mean_of_land_cells_monthly_mean_daily_rate_x_days_mm_0.001mm",
+   "extractionVersion": "ethiopia-area-monthly-v1",
+   "temporalConvention": "monthly_mean_daily_rate_times_days_in_month",
    "adapterBases": [
     "https://gopalinternship-unibasel.github.io/cropguard-demo/api/weather/oracle"
    ],
    "adapterTrustAcknowledged": true,
-   "replayNotice": "TEST ONLY. Historical replay of ERA5-Land June-September 2023 rainfall at the Adama research grid point inside a short Celo Sepolia test round. The season lies inside the pricing calibration sample, so this is an illustration and not an out-of-sample test. Valueless test tokens; not insurance."
+   "replayNotice": "TEST ONLY. Historical replay of the team's ERA5-Land June-September 2023 rainfall series (land average over 3-15N, 33-48E, monthly product) inside a short Celo Sepolia test round. The season lies inside the pricing calibration sample, so this is an illustration and not an out-of-sample test. The monthly product for June-September 2023 is far below the ERA5-Land hourly series at the points compared. Valueless test tokens; not insurance."
   },
   "fullPayoutOnFailure": true,
-  "coverageStart": "1791927009",
-  "coverageEnd": "1791927069",
-  "reportNotBefore": "1791927069",
-  "reportDeadline": "1792013469",
+  "coverageStart": "1791956562",
+  "coverageEnd": "1791956622",
+  "reportNotBefore": "1791956622",
+  "reportDeadline": "1792043022",
   "challengePeriod": "60",
-  "resolutionDeadline": "1792099869"
+  "resolutionDeadline": "1792129422"
  },
  "schedule": {
-  "fundingClose": 1791926829,
-  "salesClose": 1791927009,
-  "coverageStart": 1791927009,
-  "coverageEnd": 1791927069,
-  "reportNotBefore": 1791927069,
-  "reportDeadline": 1792013469,
+  "fundingClose": 1791956382,
+  "salesClose": 1791956562,
+  "coverageStart": 1791956562,
+  "coverageEnd": 1791956622,
+  "reportNotBefore": 1791956622,
+  "reportDeadline": 1792043022,
   "challengePeriod": 60,
-  "resolutionDeadline": 1792099869
+  "resolutionDeadline": 1792129422
  },
  "pricing": {
-  "premiumPerUnit": "30472500",
+  "premiumPerUnit": "30175500",
   "maximumPerUnit": "150000000",
   "feePerUnit": "1000000",
-  "thresholdMmX1000": 170678,
+  "thresholdMmX1000": 297289,
   "maximumExposure": "15000000000",
   "policyUnits": 2
  },
- "termsText": "CropGuard Celo Sepolia TEST ONLY: valueless CGTEST; ERA5-Land June-September 2023 rainfall at Adama replayed in a short test round; threshold 170.678 mm; premium 30.4725 / payout 150 / fee 1 per unit; rainfall report delivered by the CropGuard CRE workflow run in Chainlink's local simulator through the MockKeystoneForwarder, not by a Chainlink DON; no real insurance; failure defaults to full payout.",
- "termsHash": "0xefd6ffc66536cb0f2e65c4e128c9b1cb3bf9c55beaa50974bc8d0a9838a6c88d",
+ "termsText": "CropGuard Celo Sepolia TEST ONLY: valueless CGTEST; the team's ERA5-Land June-September 2023 rainfall series (land average over 3-15N, 33-48E, monthly product) replayed in a short test round; threshold 297.289 mm; premium 30.1755 / payout 150 / fee 1 per unit; rainfall report delivered by the CropGuard CRE workflow run in Chainlink's local simulator through the MockKeystoneForwarder, not by a Chainlink DON; no real insurance; failure defaults to full payout.",
+ "termsHash": "0x5fc8ad41e6b38d5b6ec533e76acd1d19058086b3d2a5bdcb279ad1e86d4b3623",
  "report": {
-  "transactionHash": "0xbd0946d0837bdc81c608a861cc12dffc44de724607157423c91fc0611ec60fce",
-  "blockNumber": 38643635,
+  "transactionHash": "0x6ba2efc47ef7ec003f7b2eaa155bb4246cde6deea4ca2568fc042a4decf1d2d7",
+  "blockNumber": 38673213,
   "sender": "0x6B35e017BF57B6398BBdE6fF7FfcD5cE8beFa3D2",
   "to": "0x6E9EE680ef59ef64Aa8C7371279c27E496b5eDc1",
-  "gasUsed": 193051,
-  "feeWei": "10135177500000000",
-  "rainfallMmX1000": "161524",
-  "proposedAt": 1791927623,
-  "challengeEndsAt": 1791927683,
-  "observedAt": 1791927617,
-  "evidenceHash": "0x549af3ef8c7f001301cf39363df8324c7f290a70dc81a0ac63f5060b92012d17",
-  "sourceHash": "0xf3e4fa6194c4b6ea9e4005a1a60a1519f160eb7534028b1f8cef119638e32df6",
+  "gasUsed": 193087,
+  "feeWei": "10137067500000000",
+  "rainfallMmX1000": "140501",
+  "proposedAt": 1791957201,
+  "challengeEndsAt": 1791957261,
+  "observedAt": 1791957197,
+  "evidenceHash": "0xcc20679051a4b96ab20bf074eeeda5d2bbcb051f85adf968b56b11f77b04f38c",
+  "sourceHash": "0x8133dd43d703aad0dbfd73843d27a91bb9ef64b7a842c9a2d526566974c1467d",
   "deliveredBy": "cre workflow simulate --broadcast (Chainlink CRE local simulator), through the MockKeystoneForwarder"
  },
  "simulatedWorkflow": {
   "workflowId": "0x1111111111111111111111111111111111111111111111111111111111111111",
   "workflowOwner": "0xaAaAaAaaAaAaAaaAaAAAAAAAAaaaAaAaAaaAaaAa",
   "note": "Fixed placeholder identity that Chainlink's simulator puts into every simulated report.",
-  "wasmSha256": "5aa8bab6f1a60294c3554cc196406666d2f3fc7a7785e67524cae958eb81cdd2",
+  "wasmSha256": "7a14b9c9e8383d20196fd1361fd3f9e5c78bbba807ea0a3619bc2d98f83bb953",
   "creSdk": "1.7.0",
   "creCli": "1.34.0"
  },
  "deployer": "0x6B35e017BF57B6398BBdE6fF7FfcD5cE8beFa3D2",
- "deployedAtBlock": 38642317,
- "verifiedAtBlock": 38643723,
- "totalGasUsed": 10309669,
- "totalFeeWei": "541257622500000000",
+ "deployedAtBlock": 38671880,
+ "verifiedAtBlock": 38673325,
+ "totalGasUsed": 10309621,
+ "totalFeeWei": "541255102500000000",
  "warnings": [
   "Test tokens have no monetary value",
   "The rainfall report is a Chainlink CRE simulation run on one computer, not a Chainlink DON execution",
@@ -170,5 +171,15 @@
   "Test administration is a single test key, not an independent multisignature Safe",
   "TestController is an unconfigured resolver placeholder; no dispute resolution exists in this round",
   "Minimum test challenge period is 60 seconds"
- ]
+ ],
+ "previousRound": {
+  "completedOn": "13 October 2026",
+  "oracleAdapter": "0xCd3b7Bdf1cf8781172076B531EA4a99dc173433c",
+  "reportTransaction": "0xbd0946d0837bdc81c608a861cc12dffc44de724607157423c91fc0611ec60fce",
+  "rainfallMmX1000": "161524",
+  "thresholdMmX1000": 170678,
+  "premiumPerUnit": "30472500",
+  "evidencePath": "api/weather/oracle/0xf7eab9ff5511a98ba67dac9c2b5782ecb88e98fa517f8b37031d5776a82aaa13",
+  "rainfallSeries": "ERA5-Land hourly time series at the Adama grid point"
+ }
 }

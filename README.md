@@ -12,7 +12,7 @@ CropGuard demonstrates rainfall-index crop insurance priced on the team's rainfa
 | Pricing lab | Computed in your browser. The project's own Python model files run on [Pyodide](https://pyodide.org) (Python compiled to WebAssembly). The Gamma fit and the random draws reproduce the team's R script (`CropGuard_MC.R`): with the defaults the lab shows its trigger of 297.29 mm, 1,013 of 10,000 trials below it, a premium of 30.18 USDC per hectare and its basis-risk matrix. The trials are simulations, not observations. |
 | Guided demo | Recorded. Each of the nine steps replays the response that a real run produced on a private test blockchain (Anvil, chain 31337) on 14 October 2026, run `20261014T051014Z-8a919a6b64c2`. Nothing is executed while you click, and each browser tab has its own replay. |
 | Tokens and payments | Valueless test tokens. No money, no insurance cover, no offer. |
-| Celo Sepolia test round | Read from a public test chain each time the page loads. An earlier version of the two-hectare policy, priced on the Adama grid-point series that the site used before, was run once on Celo Sepolia on 13 October 2026. Its rainfall report came from CropGuard's Chainlink CRE workflow, run in Chainlink's simulator on one computer and sent through Chainlink's mock forwarder contract. No Chainlink oracle network took part, and the mock forwarder checks no signatures. The round is kept as it was recorded on-chain. |
+| Celo Sepolia test round | Read from a public test chain each time the page loads. The same two-hectare policy, on the team's rainfall series, was run once on Celo Sepolia on 14 October 2026. Its rainfall report came from CropGuard's Chainlink CRE workflow, run in Chainlink's simulator on one computer and sent through Chainlink's mock forwarder contract. No Chainlink oracle network took part, and the mock forwarder checks no signatures. An earlier round on 13 October 2026 used the Adama grid-point series; it stays on the test network as recorded. |
 
 The 2023 season used in the guided demo is one of the seasons the model was fitted on, so it is an illustration and not an out-of-sample test.
 
@@ -34,7 +34,7 @@ The 2023 season used in the guided demo is one of the seasons the model was fitt
 | `data/replay.json`, `data/files/` | The recorded run: every public response before and after each step, including the archived rainfall evidence. |
 | `data/model-inputs.json` | The verified monthly ERA5-Land history the model reads. |
 | `static-site/onchain.js`, `data/onchain-round.json` | The test-round panel on the Guided demo page and the public record of that round: contract addresses, transaction hashes and the figures the page compares with the chain. |
-| `api/weather/oracle/` | The frozen rainfall evidence file the workflow fetched: 122 daily ERA5-Land values at the Adama grid point for June to September 2023, with their hashes. Its path and bytes must not change. |
+| `api/weather/oracle/` | The frozen rainfall evidence files the workflow fetched: the four June–September 2023 monthly values of the team's series (current round) and 122 daily ERA5-Land values at the Adama grid point (earlier round), with their hashes. Their paths and bytes must not change. |
 | `pyodide/` | Pyodide 0.29.5, unmodified. |
 
 ## Credits and licences

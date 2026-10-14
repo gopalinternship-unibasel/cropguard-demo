@@ -13,8 +13,7 @@ async function start() {
   section.setAttribute('aria-labelledby', 'onchain-title');
   section.innerHTML = `
 <div class="section-heading"><div><span class="eyebrow muted">PUBLIC TEST NETWORK · CHAINLINK CRE SIMULATION</span>
-<h2 id="onchain-title">An earlier test round on Celo Sepolia</h2></div><span class="badge neutral">Not a Chainlink network run</span></div>
-<div class="notice" id="onchain-context"></div>
+<h2 id="onchain-title">The same policy on Celo Sepolia</h2></div><span class="badge neutral">Not a Chainlink network run</span></div>
 <div class="notice" id="onchain-notice"></div>
 <div class="metrics" id="onchain-metrics"></div>
 <p class="onchain-status" id="onchain-status" role="status">Reading the test network…</p>
@@ -24,10 +23,8 @@ async function start() {
 <article class="panel"><h3>Transactions</h3><ol class="onchain-list" id="onchain-transactions"></ol></article>
 </div>
 <article class="panel"><h3>Contracts</h3><div class="onchain-contracts" id="onchain-contracts"></div>
-<p class="onchain-note">${text(round.contractNote)}</p></article>`;
+<p class="onchain-note">${text(round.contractNote)}</p>${earlier(round)}</article>`;
   anchor.insertAdjacentElement('afterend', section);
-  section.querySelector('#onchain-context').textContent = round.siteContext || '';
-  section.querySelector('#onchain-context').hidden = !round.siteContext;
   section.querySelector('#onchain-notice').textContent = round.notice;
   section.querySelector('#onchain-transactions').innerHTML = round.transactions.map(t =>
     `<li><span>${text(t.label)}</span>${link(`${round.explorerUrl}/tx/${t.hash}`, short(t.hash))}</li>`).join('');
@@ -42,6 +39,15 @@ async function start() {
   };
   refresh.addEventListener('click', load);
   await load();
+}
+
+function earlier(round) {
+  const e = round.previousRound;
+  if (!e) return '';
+  return `<p class="onchain-note">An earlier round on ${text(e.completedOn)} used the Adama grid-point series, which the site used before the team's series: `
+    + `${text(millimetres(BigInt(e.rainfallMmX1000)))} mm against a ${text(millimetres(BigInt(e.thresholdMmX1000)))} mm trigger. It stays on the test network as it was recorded: `
+    + `${link(`${round.explorerUrl}/address/${e.oracleAdapter}`, 'its OracleAdapter')}, ${link(`${round.explorerUrl}/tx/${e.reportTransaction}`, 'its rainfall report')} `
+    + `and ${link(e.evidencePath, 'its evidence file')}.</p>`;
 }
 
 function text(value) { const node = document.createElement('span'); node.textContent = String(value ?? ''); return node.innerHTML; }
@@ -76,19 +82,26 @@ async function read(round) {
     fetch(round.evidence.path).then(x => x.ok ? x.json() : Promise.reject(new Error('Evidence file missing')))]);
   const o = words(observation), p = words(policy);
   if (o.length !== 9 || p.length !== 8 || !head.result) throw new Error('Unexpected response from the test network');
-  // Replay the evidence file's own arithmetic: daily values in millionths of a millimetre,
-  // summed per month and rounded half up to thousandths.
-  const months = new Map();
-  for (const day of evidence.daily) {
-    const month = day.date.slice(0, 7);
-    months.set(month, (months.get(month) || 0n) + BigInt(day.rainfallMm.replace('.', '')));
-  }
+  // Replay the evidence file's own arithmetic. Monthly values (the team series) are in
+  // thousandths of a millimetre; daily values are in millionths, summed per month and
+  // rounded half up to thousandths.
   let replayed = 0n;
-  for (const sum of months.values()) replayed += (sum + 500n) / 1000n;
+  if (Array.isArray(evidence.monthly)) {
+    for (const month of evidence.monthly) replayed += BigInt(month.rainfallMm.replace('.', ''));
+  } else {
+    const months = new Map();
+    for (const day of evidence.daily) {
+      const month = day.date.slice(0, 7);
+      months.set(month, (months.get(month) || 0n) + BigInt(day.rainfallMm.replace('.', '')));
+    }
+    for (const sum of months.values()) replayed += (sum + 500n) / 1000n;
+  }
+  const rows = Array.isArray(evidence.monthly) ? evidence.monthly : evidence.daily;
   return {rainfall: o[0], proposedAt: o[1], challengeEndsAt: o[2], observedAt: o[3], evidenceHash: word32(o[4]), sourceHash: word32(o[5]),
     state: Number(o[7]), decision: Number(o[8]), units: p[2], premium: p[3], maximum: p[4], claim: p[6], policyState: Number(p[7]),
     capital: words(capital)[0], fees: words(fees)[0], locked: words(locked)[0], healthy: words(healthy)[0] === 1n,
-    block: Number(BigInt(head.result.number)), time: Number(BigInt(head.result.timestamp)), evidence, replayed, days: evidence.daily.length};
+    block: Number(BigInt(head.result.number)), time: Number(BigInt(head.result.timestamp)), evidence, replayed,
+    rows: rows.length, rowKind: Array.isArray(evidence.monthly) ? 'monthly' : 'daily'};
 }
 
 function render(section, round, live, error) {
@@ -113,9 +126,9 @@ function render(section, round, live, error) {
   const evidenceLink = link(round.evidence.path, 'frozen evidence file');
   section.querySelector('#onchain-checks').innerHTML = live && live.state === 0
     ? item(null, `No rainfall report is on-chain for this round. The ${evidenceLink} is available.`) : live ? [
-    item(live.replayed === live.rainfall, `The ${live.days} daily values in the ${evidenceLink} add up to ${text(millimetres(live.replayed))} mm, the amount on-chain.`),
+    item(live.replayed === live.rainfall, `The ${live.rows} ${live.rowKind} values in the ${evidenceLink} add up to ${text(millimetres(live.replayed))} mm, the amount on-chain.`),
     item(live.evidence.evidenceHash === live.evidenceHash, `The evidence hash on-chain is the one in that file (${text(short(live.evidenceHash))}).`),
-    item(live.evidence.sourceHash === live.sourceHash, `The source hash on-chain is the one in that file (${text(short(live.sourceHash))}).`),
+    item(live.evidence.sourceHash === live.sourceHash, `The source hash on-chain is the one in that file (${text(short(live.sourceHash))}); the guided demo above shows the same hash.`),
     item(live.rainfall < BigInt(round.thresholdMmX1000) === (live.claim > 0n), `${text(millimetres(live.rainfall))} mm is below the ${text(millimetres(BigInt(round.thresholdMmX1000)))} mm trigger, and the policy was paid its full ${text(tokens(live.claim))} ${text(round.tokenSymbol)}.`),
     item(live.healthy && live.locked === 0n, 'The pool passes its accounting check and no collateral is still locked.'),
   ].join('') : item(null, `Not checked: the test network did not answer. The ${evidenceLink} is still available.`);

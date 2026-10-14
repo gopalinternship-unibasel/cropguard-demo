@@ -1,0 +1,2531 @@
+{
+ "attribution": "Contains modified Copernicus Climate Change Service information. Neither the European Commission nor ECMWF is responsible for its use.",
+ "collection": "reanalysis-era5-land-monthly-means",
+ "complete": true,
+ "country": "ETH",
+ "endMonthExclusive": "2026-01",
+ "evidenceHash": "0xb8e9c32f92f1c9946a46e3bd5303901cc34f0fa7d30b55451982f6cd4bd6321c",
+ "identity": {
+  "aggregation": "unweighted_mean_of_land_cells_monthly_mean_daily_rate_x_days_mm_0.001mm",
+  "country": "ETH",
+  "dataset": "reanalysis-era5-land-monthly-means",
+  "eastE6": 48000000,
+  "extractionVersion": "ethiopia-area-monthly-v1",
+  "northE6": 15000000,
+  "parameter": "total_precipitation",
+  "provider": "era5_land_monthly",
+  "siteId": "ET_TEAM_BOX",
+  "southE6": 3000000,
+  "temporalConvention": "monthly_mean_daily_rate_times_days_in_month",
+  "westE6": 33000000
+ },
+ "monthly": [
+  {
+   "month": "1985-06",
+   "rainfallMm": "93.755"
+  },
+  {
+   "month": "1985-07",
+   "rainfallMm": "135.120"
+  },
+  {
+   "month": "1985-08",
+   "rainfallMm": "122.988"
+  },
+  {
+   "month": "1985-09",
+   "rainfallMm": "114.120"
+  },
+  {
+   "month": "1986-06",
+   "rainfallMm": "110.357"
+  },
+  {
+   "month": "1986-07",
+   "rainfallMm": "114.373"
+  },
+  {
+   "month": "1986-08",
+   "rainfallMm": "101.341"
+  },
+  {
+   "month": "1986-09",
+   "rainfallMm": "105.997"
+  },
+  {
+   "month": "1987-06",
+   "rainfallMm": "85.110"
+  },
+  {
+   "month": "1987-07",
+   "rainfallMm": "93.566"
+  },
+  {
+   "month": "1987-08",
+   "rainfallMm": "116.907"
+  },
+  {
+   "month": "1987-09",
+   "rainfallMm": "83.921"
+  },
+  {
+   "month": "1988-06",
+   "rainfallMm": "83.382"
+  },
+  {
+   "month": "1988-07",
+   "rainfallMm": "131.241"
+  },
+  {
+   "month": "1988-08",
+   "rainfallMm": "137.990"
+  },
+  {
+   "month": "1988-09",
+   "rainfallMm": "115.903"
+  },
+  {
+   "month": "1989-06",
+   "rainfallMm": "67.851"
+  },
+  {
+   "month": "1989-07",
+   "rainfallMm": "109.307"
+  },
+  {
+   "month": "1989-08",
+   "rainfallMm": "106.361"
+  },
+  {
+   "month": "1989-09",
+   "rainfallMm": "97.188"
+  },
+  {
+   "month": "1990-06",
+   "rainfallMm": "50.712"
+  },
+  {
+   "month": "1990-07",
+   "rainfallMm": "104.845"
+  },
+  {
+   "month": "1990-08",
+   "rainfallMm": "100.441"
+  },
+  {
+   "month": "1990-09",
+   "rainfallMm": "81.635"
+  },
+  {
+   "month": "1991-06",
+   "rainfallMm": "65.050"
+  },
+  {
+   "month": "1991-07",
+   "rainfallMm": "111.706"
+  },
+  {
+   "month": "1991-08",
+   "rainfallMm": "120.873"
+  },
+  {
+   "month": "1991-09",
+   "rainfallMm": "65.716"
+  },
+  {
+   "month": "1992-06",
+   "rainfallMm": "69.457"
+  },
+  {
+   "month": "1992-07",
+   "rainfallMm": "92.147"
+  },
+  {
+   "month": "1992-08",
+   "rainfallMm": "114.566"
+  },
+  {
+   "month": "1992-09",
+   "rainfallMm": "85.923"
+  },
+  {
+   "month": "1993-06",
+   "rainfallMm": "78.521"
+  },
+  {
+   "month": "1993-07",
+   "rainfallMm": "91.504"
+  },
+  {
+   "month": "1993-08",
+   "rainfallMm": "94.334"
+  },
+  {
+   "month": "1993-09",
+   "rainfallMm": "79.736"
+  },
+  {
+   "month": "1994-06",
+   "rainfallMm": "83.756"
+  },
+  {
+   "month": "1994-07",
+   "rainfallMm": "117.067"
+  },
+  {
+   "month": "1994-08",
+   "rainfallMm": "118.794"
+  },
+  {
+   "month": "1994-09",
+   "rainfallMm": "87.868"
+  },
+  {
+   "month": "1995-06",
+   "rainfallMm": "61.355"
+  },
+  {
+   "month": "1995-07",
+   "rainfallMm": "111.917"
+  },
+  {
+   "month": "1995-08",
+   "rainfallMm": "123.574"
+  },
+  {
+   "month": "1995-09",
+   "rainfallMm": "84.367"
+  },
+  {
+   "month": "1996-06",
+   "rainfallMm": "108.266"
+  },
+  {
+   "month": "1996-07",
+   "rainfallMm": "109.112"
+  },
+  {
+   "month": "1996-08",
+   "rainfallMm": "131.461"
+  },
+  {
+   "month": "1996-09",
+   "rainfallMm": "105.145"
+  },
+  {
+   "month": "1997-06",
+   "rainfallMm": "75.487"
+  },
+  {
+   "month": "1997-07",
+   "rainfallMm": "116.515"
+  },
+  {
+   "month": "1997-08",
+   "rainfallMm": "105.594"
+  },
+  {
+   "month": "1997-09",
+   "rainfallMm": "58.450"
+  },
+  {
+   "month": "1998-06",
+   "rainfallMm": "61.330"
+  },
+  {
+   "month": "1998-07",
+   "rainfallMm": "114.144"
+  },
+  {
+   "month": "1998-08",
+   "rainfallMm": "135.982"
+  },
+  {
+   "month": "1998-09",
+   "rainfallMm": "95.651"
+  },
+  {
+   "month": "1999-06",
+   "rainfallMm": "59.842"
+  },
+  {
+   "month": "1999-07",
+   "rainfallMm": "102.078"
+  },
+  {
+   "month": "1999-08",
+   "rainfallMm": "120.104"
+  },
+  {
+   "month": "1999-09",
+   "rainfallMm": "86.009"
+  },
+  {
+   "month": "2000-06",
+   "rainfallMm": "57.352"
+  },
+  {
+   "month": "2000-07",
+   "rainfallMm": "100.952"
+  },
+  {
+   "month": "2000-08",
+   "rainfallMm": "126.330"
+  },
+  {
+   "month": "2000-09",
+   "rainfallMm": "82.540"
+  },
+  {
+   "month": "2001-06",
+   "rainfallMm": "78.044"
+  },
+  {
+   "month": "2001-07",
+   "rainfallMm": "113.399"
+  },
+  {
+   "month": "2001-08",
+   "rainfallMm": "127.245"
+  },
+  {
+   "month": "2001-09",
+   "rainfallMm": "87.281"
+  },
+  {
+   "month": "2002-06",
+   "rainfallMm": "63.393"
+  },
+  {
+   "month": "2002-07",
+   "rainfallMm": "81.907"
+  },
+  {
+   "month": "2002-08",
+   "rainfallMm": "104.967"
+  },
+  {
+   "month": "2002-09",
+   "rainfallMm": "77.304"
+  },
+  {
+   "month": "2003-06",
+   "rainfallMm": "79.240"
+  },
+  {
+   "month": "2003-07",
+   "rainfallMm": "110.369"
+  },
+  {
+   "month": "2003-08",
+   "rainfallMm": "128.774"
+  },
+  {
+   "month": "2003-09",
+   "rainfallMm": "81.474"
+  },
+  {
+   "month": "2004-06",
+   "rainfallMm": "67.371"
+  },
+  {
+   "month": "2004-07",
+   "rainfallMm": "91.366"
+  },
+  {
+   "month": "2004-08",
+   "rainfallMm": "108.352"
+  },
+  {
+   "month": "2004-09",
+   "rainfallMm": "84.057"
+  },
+  {
+   "month": "2005-06",
+   "rainfallMm": "75.184"
+  },
+  {
+   "month": "2005-07",
+   "rainfallMm": "105.785"
+  },
+  {
+   "month": "2005-08",
+   "rainfallMm": "113.737"
+  },
+  {
+   "month": "2005-09",
+   "rainfallMm": "92.114"
+  },
+  {
+   "month": "2006-06",
+   "rainfallMm": "66.146"
+  },
+  {
+   "month": "2006-07",
+   "rainfallMm": "111.810"
+  },
+  {
+   "month": "2006-08",
+   "rainfallMm": "128.923"
+  },
+  {
+   "month": "2006-09",
+   "rainfallMm": "88.947"
+  },
+  {
+   "month": "2007-06",
+   "rainfallMm": "97.646"
+  },
+  {
+   "month": "2007-07",
+   "rainfallMm": "124.140"
+  },
+  {
+   "month": "2007-08",
+   "rainfallMm": "121.962"
+  },
+  {
+   "month": "2007-09",
+   "rainfallMm": "103.710"
+  },
+  {
+   "month": "2008-06",
+   "rainfallMm": "66.832"
+  },
+  {
+   "month": "2008-07",
+   "rainfallMm": "104.189"
+  },
+  {
+   "month": "2008-08",
+   "rainfallMm": "109.745"
+  },
+  {
+   "month": "2008-09",
+   "rainfallMm": "87.203"
+  },
+  {
+   "month": "2009-06",
+   "rainfallMm": "45.802"
+  },
+  {
+   "month": "2009-07",
+   "rainfallMm": "89.761"
+  },
+  {
+   "month": "2009-08",
+   "rainfallMm": "104.042"
+  },
+  {
+   "month": "2009-09",
+   "rainfallMm": "67.715"
+  },
+  {
+   "month": "2010-06",
+   "rainfallMm": "64.566"
+  },
+  {
+   "month": "2010-07",
+   "rainfallMm": "113.962"
+  },
+  {
+   "month": "2010-08",
+   "rainfallMm": "121.915"
+  },
+  {
+   "month": "2010-09",
+   "rainfallMm": "90.961"
+  },
+  {
+   "month": "2011-06",
+   "rainfallMm": "67.047"
+  },
+  {
+   "month": "2011-07",
+   "rainfallMm": "89.778"
+  },
+  {
+   "month": "2011-08",
+   "rainfallMm": "123.917"
+  },
+  {
+   "month": "2011-09",
+   "rainfallMm": "94.284"
+  },
+  {
+   "month": "2012-06",
+   "rainfallMm": "69.250"
+  },
+  {
+   "month": "2012-07",
+   "rainfallMm": "122.548"
+  },
+  {
+   "month": "2012-08",
+   "rainfallMm": "122.993"
+  },
+  {
+   "month": "2012-09",
+   "rainfallMm": "99.616"
+  },
+  {
+   "month": "2013-06",
+   "rainfallMm": "71.234"
+  },
+  {
+   "month": "2013-07",
+   "rainfallMm": "104.366"
+  },
+  {
+   "month": "2013-08",
+   "rainfallMm": "125.860"
+  },
+  {
+   "month": "2013-09",
+   "rainfallMm": "89.476"
+  },
+  {
+   "month": "2014-06",
+   "rainfallMm": "57.234"
+  },
+  {
+   "month": "2014-07",
+   "rainfallMm": "103.353"
+  },
+  {
+   "month": "2014-08",
+   "rainfallMm": "121.363"
+  },
+  {
+   "month": "2014-09",
+   "rainfallMm": "92.721"
+  },
+  {
+   "month": "2015-06",
+   "rainfallMm": "72.288"
+  },
+  {
+   "month": "2015-07",
+   "rainfallMm": "78.973"
+  },
+  {
+   "month": "2015-08",
+   "rainfallMm": "97.043"
+  },
+  {
+   "month": "2015-09",
+   "rainfallMm": "62.197"
+  },
+  {
+   "month": "2016-06",
+   "rainfallMm": "64.355"
+  },
+  {
+   "month": "2016-07",
+   "rainfallMm": "118.576"
+  },
+  {
+   "month": "2016-08",
+   "rainfallMm": "102.624"
+  },
+  {
+   "month": "2016-09",
+   "rainfallMm": "68.579"
+  },
+  {
+   "month": "2017-06",
+   "rainfallMm": "51.957"
+  },
+  {
+   "month": "2017-07",
+   "rainfallMm": "102.734"
+  },
+  {
+   "month": "2017-08",
+   "rainfallMm": "114.360"
+  },
+  {
+   "month": "2017-09",
+   "rainfallMm": "97.042"
+  },
+  {
+   "month": "2018-06",
+   "rainfallMm": "90.187"
+  },
+  {
+   "month": "2018-07",
+   "rainfallMm": "88.479"
+  },
+  {
+   "month": "2018-08",
+   "rainfallMm": "115.916"
+  },
+  {
+   "month": "2018-09",
+   "rainfallMm": "67.529"
+  },
+  {
+   "month": "2019-06",
+   "rainfallMm": "106.954"
+  },
+  {
+   "month": "2019-07",
+   "rainfallMm": "107.320"
+  },
+  {
+   "month": "2019-08",
+   "rainfallMm": "118.371"
+  },
+  {
+   "month": "2019-09",
+   "rainfallMm": "109.648"
+  },
+  {
+   "month": "2020-06",
+   "rainfallMm": "75.903"
+  },
+  {
+   "month": "2020-07",
+   "rainfallMm": "127.244"
+  },
+  {
+   "month": "2020-08",
+   "rainfallMm": "142.524"
+  },
+  {
+   "month": "2020-09",
+   "rainfallMm": "87.709"
+  },
+  {
+   "month": "2021-06",
+   "rainfallMm": "37.208"
+  },
+  {
+   "month": "2021-07",
+   "rainfallMm": "115.602"
+  },
+  {
+   "month": "2021-08",
+   "rainfallMm": "89.499"
+  },
+  {
+   "month": "2021-09",
+   "rainfallMm": "89.168"
+  },
+  {
+   "month": "2022-06",
+   "rainfallMm": "49.965"
+  },
+  {
+   "month": "2022-07",
+   "rainfallMm": "104.215"
+  },
+  {
+   "month": "2022-08",
+   "rainfallMm": "126.818"
+  },
+  {
+   "month": "2022-09",
+   "rainfallMm": "41.101"
+  },
+  {
+   "month": "2023-06",
+   "rainfallMm": "27.827"
+  },
+  {
+   "month": "2023-07",
+   "rainfallMm": "36.125"
+  },
+  {
+   "month": "2023-08",
+   "rainfallMm": "37.998"
+  },
+  {
+   "month": "2023-09",
+   "rainfallMm": "38.551"
+  },
+  {
+   "month": "2024-06",
+   "rainfallMm": "47.557"
+  },
+  {
+   "month": "2024-07",
+   "rainfallMm": "111.693"
+  },
+  {
+   "month": "2024-08",
+   "rainfallMm": "154.035"
+  },
+  {
+   "month": "2024-09",
+   "rainfallMm": "74.755"
+  },
+  {
+   "month": "2025-06",
+   "rainfallMm": "32.944"
+  },
+  {
+   "month": "2025-07",
+   "rainfallMm": "89.499"
+  },
+  {
+   "month": "2025-08",
+   "rainfallMm": "135.793"
+  },
+  {
+   "month": "2025-09",
+   "rainfallMm": "87.627"
+  }
+ ],
+ "oracleStatus": "offchain_observation_not_an_onchain_oracle_report",
+ "parameter": "era5_land_monthly:total_precipitation",
+ "provenance": [
+  {
+   "bytes": 1456,
+   "extension": "json",
+   "note": "Import inspection: spreadsheet against the NetCDF land average; not a provider signature.",
+   "sha256": "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+   "url": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-land-monthly-means"
+  },
+  {
+   "bytes": 7624746,
+   "extension": "nc",
+   "note": "ERA5-Land monthly averaged reanalysis, total precipitation, 15N/33E/3N/48E, June–September 1985–2025; unmodified bytes.",
+   "sha256": "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+   "url": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-land-monthly-means"
+  },
+  {
+   "bytes": 1147,
+   "extension": "json",
+   "note": "CDS request description for the NetCDF; no credentials.",
+   "sha256": "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+   "url": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-land-monthly-means"
+  },
+  {
+   "bytes": 13075,
+   "extension": "xlsx",
+   "note": "The team's spreadsheet, as supplied: June–September monthly and season totals in mm.",
+   "sha256": "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc",
+   "url": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-land-monthly-means"
+  }
+ ],
+ "provider": "era5_land_monthly",
+ "qualityNotice": "Area average over a fixed box that extends beyond Ethiopia, not farm rainfall or crop loss. Taken from the ERA5-Land monthly product; data may be revised. Not attested by the data provider.",
+ "rainfallMmX1000": 15407858,
+ "records": [
+  {
+   "month": "1985-06",
+   "quality": "present",
+   "rainfallMmX1000": 93755,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1985-07",
+   "quality": "present",
+   "rainfallMmX1000": 135120,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1985-08",
+   "quality": "present",
+   "rainfallMmX1000": 122988,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1985-09",
+   "quality": "present",
+   "rainfallMmX1000": 114120,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1986-06",
+   "quality": "present",
+   "rainfallMmX1000": 110357,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1986-07",
+   "quality": "present",
+   "rainfallMmX1000": 114373,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1986-08",
+   "quality": "present",
+   "rainfallMmX1000": 101341,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1986-09",
+   "quality": "present",
+   "rainfallMmX1000": 105997,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1987-06",
+   "quality": "present",
+   "rainfallMmX1000": 85110,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1987-07",
+   "quality": "present",
+   "rainfallMmX1000": 93566,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1987-08",
+   "quality": "present",
+   "rainfallMmX1000": 116907,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1987-09",
+   "quality": "present",
+   "rainfallMmX1000": 83921,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1988-06",
+   "quality": "present",
+   "rainfallMmX1000": 83382,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1988-07",
+   "quality": "present",
+   "rainfallMmX1000": 131241,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1988-08",
+   "quality": "present",
+   "rainfallMmX1000": 137990,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1988-09",
+   "quality": "present",
+   "rainfallMmX1000": 115903,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1989-06",
+   "quality": "present",
+   "rainfallMmX1000": 67851,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1989-07",
+   "quality": "present",
+   "rainfallMmX1000": 109307,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1989-08",
+   "quality": "present",
+   "rainfallMmX1000": 106361,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1989-09",
+   "quality": "present",
+   "rainfallMmX1000": 97188,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1990-06",
+   "quality": "present",
+   "rainfallMmX1000": 50712,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1990-07",
+   "quality": "present",
+   "rainfallMmX1000": 104845,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1990-08",
+   "quality": "present",
+   "rainfallMmX1000": 100441,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1990-09",
+   "quality": "present",
+   "rainfallMmX1000": 81635,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1991-06",
+   "quality": "present",
+   "rainfallMmX1000": 65050,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1991-07",
+   "quality": "present",
+   "rainfallMmX1000": 111706,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1991-08",
+   "quality": "present",
+   "rainfallMmX1000": 120873,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1991-09",
+   "quality": "present",
+   "rainfallMmX1000": 65716,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1992-06",
+   "quality": "present",
+   "rainfallMmX1000": 69457,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1992-07",
+   "quality": "present",
+   "rainfallMmX1000": 92147,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1992-08",
+   "quality": "present",
+   "rainfallMmX1000": 114566,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1992-09",
+   "quality": "present",
+   "rainfallMmX1000": 85923,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1993-06",
+   "quality": "present",
+   "rainfallMmX1000": 78521,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1993-07",
+   "quality": "present",
+   "rainfallMmX1000": 91504,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1993-08",
+   "quality": "present",
+   "rainfallMmX1000": 94334,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1993-09",
+   "quality": "present",
+   "rainfallMmX1000": 79736,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1994-06",
+   "quality": "present",
+   "rainfallMmX1000": 83756,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1994-07",
+   "quality": "present",
+   "rainfallMmX1000": 117067,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1994-08",
+   "quality": "present",
+   "rainfallMmX1000": 118794,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1994-09",
+   "quality": "present",
+   "rainfallMmX1000": 87868,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1995-06",
+   "quality": "present",
+   "rainfallMmX1000": 61355,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1995-07",
+   "quality": "present",
+   "rainfallMmX1000": 111917,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1995-08",
+   "quality": "present",
+   "rainfallMmX1000": 123574,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1995-09",
+   "quality": "present",
+   "rainfallMmX1000": 84367,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1996-06",
+   "quality": "present",
+   "rainfallMmX1000": 108266,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1996-07",
+   "quality": "present",
+   "rainfallMmX1000": 109112,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1996-08",
+   "quality": "present",
+   "rainfallMmX1000": 131461,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1996-09",
+   "quality": "present",
+   "rainfallMmX1000": 105145,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1997-06",
+   "quality": "present",
+   "rainfallMmX1000": 75487,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1997-07",
+   "quality": "present",
+   "rainfallMmX1000": 116515,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1997-08",
+   "quality": "present",
+   "rainfallMmX1000": 105594,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1997-09",
+   "quality": "present",
+   "rainfallMmX1000": 58450,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1998-06",
+   "quality": "present",
+   "rainfallMmX1000": 61330,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1998-07",
+   "quality": "present",
+   "rainfallMmX1000": 114144,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1998-08",
+   "quality": "present",
+   "rainfallMmX1000": 135982,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1998-09",
+   "quality": "present",
+   "rainfallMmX1000": 95651,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1999-06",
+   "quality": "present",
+   "rainfallMmX1000": 59842,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1999-07",
+   "quality": "present",
+   "rainfallMmX1000": 102078,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1999-08",
+   "quality": "present",
+   "rainfallMmX1000": 120104,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "1999-09",
+   "quality": "present",
+   "rainfallMmX1000": 86009,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2000-06",
+   "quality": "present",
+   "rainfallMmX1000": 57352,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2000-07",
+   "quality": "present",
+   "rainfallMmX1000": 100952,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2000-08",
+   "quality": "present",
+   "rainfallMmX1000": 126330,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2000-09",
+   "quality": "present",
+   "rainfallMmX1000": 82540,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2001-06",
+   "quality": "present",
+   "rainfallMmX1000": 78044,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2001-07",
+   "quality": "present",
+   "rainfallMmX1000": 113399,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2001-08",
+   "quality": "present",
+   "rainfallMmX1000": 127245,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2001-09",
+   "quality": "present",
+   "rainfallMmX1000": 87281,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2002-06",
+   "quality": "present",
+   "rainfallMmX1000": 63393,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2002-07",
+   "quality": "present",
+   "rainfallMmX1000": 81907,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2002-08",
+   "quality": "present",
+   "rainfallMmX1000": 104967,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2002-09",
+   "quality": "present",
+   "rainfallMmX1000": 77304,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2003-06",
+   "quality": "present",
+   "rainfallMmX1000": 79240,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2003-07",
+   "quality": "present",
+   "rainfallMmX1000": 110369,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2003-08",
+   "quality": "present",
+   "rainfallMmX1000": 128774,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2003-09",
+   "quality": "present",
+   "rainfallMmX1000": 81474,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2004-06",
+   "quality": "present",
+   "rainfallMmX1000": 67371,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2004-07",
+   "quality": "present",
+   "rainfallMmX1000": 91366,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2004-08",
+   "quality": "present",
+   "rainfallMmX1000": 108352,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2004-09",
+   "quality": "present",
+   "rainfallMmX1000": 84057,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2005-06",
+   "quality": "present",
+   "rainfallMmX1000": 75184,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2005-07",
+   "quality": "present",
+   "rainfallMmX1000": 105785,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2005-08",
+   "quality": "present",
+   "rainfallMmX1000": 113737,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2005-09",
+   "quality": "present",
+   "rainfallMmX1000": 92114,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2006-06",
+   "quality": "present",
+   "rainfallMmX1000": 66146,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2006-07",
+   "quality": "present",
+   "rainfallMmX1000": 111810,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2006-08",
+   "quality": "present",
+   "rainfallMmX1000": 128923,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2006-09",
+   "quality": "present",
+   "rainfallMmX1000": 88947,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2007-06",
+   "quality": "present",
+   "rainfallMmX1000": 97646,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2007-07",
+   "quality": "present",
+   "rainfallMmX1000": 124140,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2007-08",
+   "quality": "present",
+   "rainfallMmX1000": 121962,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2007-09",
+   "quality": "present",
+   "rainfallMmX1000": 103710,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2008-06",
+   "quality": "present",
+   "rainfallMmX1000": 66832,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2008-07",
+   "quality": "present",
+   "rainfallMmX1000": 104189,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2008-08",
+   "quality": "present",
+   "rainfallMmX1000": 109745,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2008-09",
+   "quality": "present",
+   "rainfallMmX1000": 87203,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2009-06",
+   "quality": "present",
+   "rainfallMmX1000": 45802,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2009-07",
+   "quality": "present",
+   "rainfallMmX1000": 89761,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2009-08",
+   "quality": "present",
+   "rainfallMmX1000": 104042,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2009-09",
+   "quality": "present",
+   "rainfallMmX1000": 67715,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2010-06",
+   "quality": "present",
+   "rainfallMmX1000": 64566,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2010-07",
+   "quality": "present",
+   "rainfallMmX1000": 113962,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2010-08",
+   "quality": "present",
+   "rainfallMmX1000": 121915,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2010-09",
+   "quality": "present",
+   "rainfallMmX1000": 90961,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2011-06",
+   "quality": "present",
+   "rainfallMmX1000": 67047,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2011-07",
+   "quality": "present",
+   "rainfallMmX1000": 89778,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2011-08",
+   "quality": "present",
+   "rainfallMmX1000": 123917,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2011-09",
+   "quality": "present",
+   "rainfallMmX1000": 94284,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2012-06",
+   "quality": "present",
+   "rainfallMmX1000": 69250,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2012-07",
+   "quality": "present",
+   "rainfallMmX1000": 122548,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2012-08",
+   "quality": "present",
+   "rainfallMmX1000": 122993,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2012-09",
+   "quality": "present",
+   "rainfallMmX1000": 99616,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2013-06",
+   "quality": "present",
+   "rainfallMmX1000": 71234,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2013-07",
+   "quality": "present",
+   "rainfallMmX1000": 104366,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2013-08",
+   "quality": "present",
+   "rainfallMmX1000": 125860,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2013-09",
+   "quality": "present",
+   "rainfallMmX1000": 89476,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2014-06",
+   "quality": "present",
+   "rainfallMmX1000": 57234,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2014-07",
+   "quality": "present",
+   "rainfallMmX1000": 103353,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2014-08",
+   "quality": "present",
+   "rainfallMmX1000": 121363,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2014-09",
+   "quality": "present",
+   "rainfallMmX1000": 92721,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2015-06",
+   "quality": "present",
+   "rainfallMmX1000": 72288,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2015-07",
+   "quality": "present",
+   "rainfallMmX1000": 78973,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2015-08",
+   "quality": "present",
+   "rainfallMmX1000": 97043,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2015-09",
+   "quality": "present",
+   "rainfallMmX1000": 62197,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2016-06",
+   "quality": "present",
+   "rainfallMmX1000": 64355,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2016-07",
+   "quality": "present",
+   "rainfallMmX1000": 118576,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2016-08",
+   "quality": "present",
+   "rainfallMmX1000": 102624,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2016-09",
+   "quality": "present",
+   "rainfallMmX1000": 68579,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2017-06",
+   "quality": "present",
+   "rainfallMmX1000": 51957,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2017-07",
+   "quality": "present",
+   "rainfallMmX1000": 102734,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2017-08",
+   "quality": "present",
+   "rainfallMmX1000": 114360,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2017-09",
+   "quality": "present",
+   "rainfallMmX1000": 97042,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2018-06",
+   "quality": "present",
+   "rainfallMmX1000": 90187,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2018-07",
+   "quality": "present",
+   "rainfallMmX1000": 88479,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2018-08",
+   "quality": "present",
+   "rainfallMmX1000": 115916,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2018-09",
+   "quality": "present",
+   "rainfallMmX1000": 67529,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2019-06",
+   "quality": "present",
+   "rainfallMmX1000": 106954,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2019-07",
+   "quality": "present",
+   "rainfallMmX1000": 107320,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2019-08",
+   "quality": "present",
+   "rainfallMmX1000": 118371,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2019-09",
+   "quality": "present",
+   "rainfallMmX1000": 109648,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2020-06",
+   "quality": "present",
+   "rainfallMmX1000": 75903,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2020-07",
+   "quality": "present",
+   "rainfallMmX1000": 127244,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2020-08",
+   "quality": "present",
+   "rainfallMmX1000": 142524,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2020-09",
+   "quality": "present",
+   "rainfallMmX1000": 87709,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2021-06",
+   "quality": "present",
+   "rainfallMmX1000": 37208,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2021-07",
+   "quality": "present",
+   "rainfallMmX1000": 115602,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2021-08",
+   "quality": "present",
+   "rainfallMmX1000": 89499,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2021-09",
+   "quality": "present",
+   "rainfallMmX1000": 89168,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2022-06",
+   "quality": "present",
+   "rainfallMmX1000": 49965,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2022-07",
+   "quality": "present",
+   "rainfallMmX1000": 104215,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2022-08",
+   "quality": "present",
+   "rainfallMmX1000": 126818,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2022-09",
+   "quality": "present",
+   "rainfallMmX1000": 41101,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2023-06",
+   "quality": "present",
+   "rainfallMmX1000": 27827,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2023-07",
+   "quality": "present",
+   "rainfallMmX1000": 36125,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2023-08",
+   "quality": "present",
+   "rainfallMmX1000": 37998,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2023-09",
+   "quality": "present",
+   "rainfallMmX1000": 38551,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2024-06",
+   "quality": "present",
+   "rainfallMmX1000": 47557,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2024-07",
+   "quality": "present",
+   "rainfallMmX1000": 111693,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2024-08",
+   "quality": "present",
+   "rainfallMmX1000": 154035,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2024-09",
+   "quality": "present",
+   "rainfallMmX1000": 74755,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2025-06",
+   "quality": "present",
+   "rainfallMmX1000": 32944,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2025-07",
+   "quality": "present",
+   "rainfallMmX1000": 89499,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2025-08",
+   "quality": "present",
+   "rainfallMmX1000": 135793,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  },
+  {
+   "month": "2025-09",
+   "quality": "present",
+   "rainfallMmX1000": 87627,
+   "sourceHashes": [
+    "0x45d982a3b6da06710fb15d294c867ed0767dd5d9cc3745d86d2dbe96f4176348",
+    "0x4e18043399b1f34acd8d588f734abff2ed929b9ff92ee7ab07b6738ac82dbe1e",
+    "0xeb23a055d243fb647334f442193d6e550ec10647527821db74b7963916415fb1",
+    "0xf204da583c21415520b16c43beec1988541dda4366d8fa502a56de4f61b0d1fc"
+   ]
+  }
+ ],
+ "retrievedAt": "2026-10-04T06:31:44+00:00",
+ "schemaVersion": 2,
+ "sourceHash": "0x8133dd43d703aad0dbfd73843d27a91bb9ef64b7a842c9a2d526566974c1467d",
+ "sourceType": "other",
+ "startMonth": "1985-01",
+ "station": "ET_TEAM_BOX",
+ "synthetic": false,
+ "snapshotId": "0x17144158a4e375dcf340ffd76d9841ed27d30c9bbd4b64725cb2610809c46dc6",
+ "loadedFromStorage": true,
+ "storage": "sqlite_and_content_addressed_raw_files"
+}

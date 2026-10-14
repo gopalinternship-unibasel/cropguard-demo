@@ -13,7 +13,8 @@ async function start() {
   section.setAttribute('aria-labelledby', 'onchain-title');
   section.innerHTML = `
 <div class="section-heading"><div><span class="eyebrow muted">PUBLIC TEST NETWORK · CHAINLINK CRE SIMULATION</span>
-<h2 id="onchain-title">The same policy on Celo Sepolia</h2></div><span class="badge neutral">Not a Chainlink network run</span></div>
+<h2 id="onchain-title">An earlier test round on Celo Sepolia</h2></div><span class="badge neutral">Not a Chainlink network run</span></div>
+<div class="notice" id="onchain-context"></div>
 <div class="notice" id="onchain-notice"></div>
 <div class="metrics" id="onchain-metrics"></div>
 <p class="onchain-status" id="onchain-status" role="status">Reading the test network…</p>
@@ -25,6 +26,8 @@ async function start() {
 <article class="panel"><h3>Contracts</h3><div class="onchain-contracts" id="onchain-contracts"></div>
 <p class="onchain-note">${text(round.contractNote)}</p></article>`;
   anchor.insertAdjacentElement('afterend', section);
+  section.querySelector('#onchain-context').textContent = round.siteContext || '';
+  section.querySelector('#onchain-context').hidden = !round.siteContext;
   section.querySelector('#onchain-notice').textContent = round.notice;
   section.querySelector('#onchain-transactions').innerHTML = round.transactions.map(t =>
     `<li><span>${text(t.label)}</span>${link(`${round.explorerUrl}/tx/${t.hash}`, short(t.hash))}</li>`).join('');
@@ -112,7 +115,7 @@ function render(section, round, live, error) {
     ? item(null, `No rainfall report is on-chain for this round. The ${evidenceLink} is available.`) : live ? [
     item(live.replayed === live.rainfall, `The ${live.days} daily values in the ${evidenceLink} add up to ${text(millimetres(live.replayed))} mm, the amount on-chain.`),
     item(live.evidence.evidenceHash === live.evidenceHash, `The evidence hash on-chain is the one in that file (${text(short(live.evidenceHash))}).`),
-    item(live.evidence.sourceHash === live.sourceHash, `The source hash on-chain is the one in that file (${text(short(live.sourceHash))}); the guided demo above shows the same hash.`),
+    item(live.evidence.sourceHash === live.sourceHash, `The source hash on-chain is the one in that file (${text(short(live.sourceHash))}).`),
     item(live.rainfall < BigInt(round.thresholdMmX1000) === (live.claim > 0n), `${text(millimetres(live.rainfall))} mm is below the ${text(millimetres(BigInt(round.thresholdMmX1000)))} mm trigger, and the policy was paid its full ${text(tokens(live.claim))} ${text(round.tokenSymbol)}.`),
     item(live.healthy && live.locked === 0n, 'The pool passes its accounting check and no collateral is still locked.'),
   ].join('') : item(null, `Not checked: the test network did not answer. The ${evidenceLink} is still available.`);

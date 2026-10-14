@@ -11,6 +11,7 @@
  "realChainlinkDon": false,
  "chainlinkCreSimulation": true,
  "oracleMode": "chainlink_cre_workflow_local_simulation_via_mock_forwarder",
+ "siteContext": "This round ran on 13 October 2026, before the site switched to the team's rainfall series. It used the earlier Adama grid-point series: 161.524 mm for June to September 2023 against a 170.678 mm trigger, at 30.4725 test tokens per unit. An on-chain record cannot be changed afterwards, so it is kept here as it was. The guided demo above uses the team's series: 140.501 mm against a 297.289 mm trigger.",
  "notice": "On 13 October 2026 this policy was run once on Celo Sepolia, a public test network. The rainfall figure was computed by CropGuard's Chainlink CRE workflow from the frozen evidence file on this site. The workflow ran in Chainlink's simulator on one computer and sent its report through Chainlink's mock forwarder contract. No Chainlink oracle network took part, and the mock forwarder checks no signatures, so this shows the data path, not oracle security. The tokens have no value and this is not insurance.",
  "contractNote": "The six CropGuard contracts are test-only variants: a free test token instead of USDC and a 60-second challenge period instead of three days. TestController only fills the resolver slot and was never configured, so a disputed report could not have been resolved in this round. One test key holds every role.",
  "thresholdMmX1000": 170678,

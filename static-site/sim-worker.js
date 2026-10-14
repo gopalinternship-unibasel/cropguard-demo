@@ -8,7 +8,7 @@ const root = new URL('../', self.location.href);
 importScripts(new URL('pyodide/pyodide.js', root).href);
 
 const MODEL_FILES = ['adapter.py', 'services/__init__.py', 'services/simulation.py', 'services/gamma_model.py',
-  'services/actuarial.py', 'services/pricing.py', 'services/weather.py'];
+  'services/actuarial.py', 'services/pricing.py', 'services/weather.py', 'services/r_compat.py'];
 let booting;
 
 async function text(path) {

@@ -80,7 +80,7 @@ async function initialize(){
       kpis([['Gross reference premium / ha',money(r.pricing.premiumPerHaBaseUnits)],['Expected pool loss',money(r.pricing.expectedPoolLossBaseUnits)],['Full collateral · 100 ha',money(r.pricing.requiredCollateralBaseUnits)]]),
       row('Rate on line · premium / maximum',percent(r.pricingDiagnostics.rateOnLine)),
       row('Capital share of premium',`${(r.pricingDiagnostics.capitalShareOfPremium*100).toFixed(1)}%`),
-      el('p','The original presentation baseline and R run are not included. The packaged Adama ERA5-Land calibration and model scenarios are kept separate from this arithmetic reference.','small'));
+      el('p','This arithmetic reference uses the presentation’s fixed figures. The Pricing lab runs the team’s R script on the packaged team rainfall series.','small'));
   }catch(e){$('research-reference').textContent=e.message;}
 }
 if(panel){

@@ -5,8 +5,8 @@ import { readEvidenceJson, evidenceJsonBlob } from './json-evidence.js';
 const $ = id => document.getElementById(id);
 const form = $('simulation-form');
 const state = { report: null, request: null, busy: false, stale: false, chart: 'rainfall', sourcesLoading: false };
-const era5Parameters = new Set(['era5_land:total_precipitation', 'era5_land_timeseries:total_precipitation']);
-const era5Providers = new Set(['era5_land', 'era5_land_timeseries']);
+const era5Parameters = new Set(['era5_land:total_precipitation', 'era5_land_timeseries:total_precipitation', 'era5_land_monthly:total_precipitation']);
+const era5Providers = new Set(['era5_land', 'era5_land_timeseries', 'era5_land_monthly']);
 const NS = 'http://www.w3.org/2000/svg';
 const colors = { green: '#91a780', dark: '#36583f', gold: '#bd9b61', light: '#e5ebdc', line: '#b89962' };
 const number = value => new Intl.NumberFormat('en', { maximumFractionDigits: 1 }).format(value);
@@ -46,7 +46,7 @@ function sourceControls() {
   const ready = !saved || Boolean($('sim-snapshot').value);
   $('saved-station-options').classList.toggle('hidden', !saved);
   $('sim-source-note').textContent = !saved
-    ? 'Included Copernicus ERA5-Land history for Adama, 1985–2025. Its file checksum is verified before analysis; Gamma trials are simulated.'
+    ? 'Included copy of the team’s rainfall series: June–September 1985–2025, the land average over 3–15°N, 33–48°E in the ERA5-Land monthly product. Its checksum is verified before analysis; Gamma trials are simulated.'
     : state.sourcesLoading ? 'Checking the local ERA5-Land archive…' : ready
     ? 'ERA5-Land reanalysis is the historical input. Gamma trials are simulated from that history.'
     : $('sim-snapshot').options.length > 1 ? 'Select a saved ERA5-Land history for this simulation.'
@@ -65,8 +65,8 @@ function thresholdControls() {
   $('sim-method').disabled = state.busy || calibrated;
   if (calibrated) $('sim-method').value = 'gamma';
   $('sim-threshold-note').textContent = calibrated
-    ? 'Calculated from the selected ERA5-Land history each run. Current Adama baseline: 170.678 mm.'
-    : 'Editable fixed trigger. The presentation uses 297.29 mm; it is a comparison value, not the calibrated Adama trigger.';
+    ? 'Calculated from the selected rainfall history each run. Team series: 297.289 mm.'
+    : 'Editable fixed trigger. The calibrated trigger for the team series is 297.289 mm.';
 }
 function setBusy(busy) {
   state.busy = busy;
@@ -159,8 +159,23 @@ function render(r) {
   $('sim-mc-interval').textContent = r.monteCarloWilsonInterval95.map(x => percent(x)).join(' – ');
   $('sim-historical-prob').textContent = percent(r.historicalTriggerProbability);
   $('sim-historical-upper').textContent = percent(r.historicalWilsonUpperOneSided95);
+  basisRisk(r);
   methodology(r);
   chart();
+}
+function basisRisk(r) {
+  const basis = r.basisRisk;
+  $('sim-basis-panel').classList.toggle('hidden', !basis);
+  if (!basis) return;
+  const cell = (id, count) => { $(id).textContent = `${new Intl.NumberFormat('en').format(count)} · ${percent(count / r.simulations, 2)}`; };
+  $('sim-basis-accuracy').textContent = `${percent(basis.accuracy, 2)} agree`;
+  $('sim-basis-sd').textContent = basis.spatialNoiseSdMm.toFixed(2);
+  cell('sim-basis-both', basis.matrix.payoutAndDrought);
+  cell('sim-basis-fp', basis.matrix.payoutNoDrought);
+  cell('sim-basis-fn', basis.matrix.droughtNoPayout);
+  cell('sim-basis-neither', basis.matrix.neitherPayoutNorDrought);
+  $('sim-basis-fn-rate').textContent = percent(basis.falseNegativeRate, 2);
+  $('sim-basis-fp-rate').textContent = percent(basis.falsePositiveRate, 2);
 }
 function methodology(r) {
   const target = $('simulation-methodology');
@@ -175,8 +190,8 @@ function methodology(r) {
   target.append(el('h4', '', 'The model and the rate'));
   target.append(el('p', '', r.parameters.method === 'bootstrap'
     ? 'Each trial resamples one complete input season, keeping that season’s months together. It then applies the rainfall stress and the same strict binary drought threshold. It does not invent unseen extremes.'
-    : 'Strictly positive seasonal totals are fitted to a Gamma distribution by maximum likelihood, with location fixed at zero. Zero or constant seasons are rejected; use bootstrap for those cases. This stationary model can extrapolate into an unobserved tail, but its parameters and fit are not certified.'));
-  if (r.parameters.method === 'gamma') target.append(el('p', '', `Fitted 10th percentile: ${r.modelFit.tenthPercentileMm.toFixed(3)} mm. Gamma shape: ${r.modelFit.shape.toPrecision(6)}; scale: ${r.modelFit.scaleMm.toPrecision(6)} mm. ${r.parameters.threshold_mode === 'gamma_p10' ? 'The selected local calibration uses this fitted percentile as the payout trigger, rounded to 0.001 mm.' : 'The selected fixed payout threshold is retained separately from this calibration.'}`));
+    : 'Seasonal totals are fitted to a Gamma distribution the way the team’s R script does it (MASS::fitdistr: a moment start, then BFGS), and the trials are drawn with R’s own random number generator from the same seed, so the default run reproduces the script’s figures. Zero or constant seasons are rejected; use bootstrap for those cases. This stationary model can extrapolate into an unobserved tail, but its parameters and fit are not certified.'));
+  if (r.parameters.method === 'gamma') target.append(el('p', '', `Fitted 10th percentile: ${r.modelFit.tenthPercentileMm.toFixed(3)} mm. Gamma shape: ${r.modelFit.shape.toFixed(4)}; rate: ${r.modelFit.ratePerMm.toFixed(4)} per mm (scale ${r.modelFit.scaleMm.toFixed(3)} mm). ${r.parameters.threshold_mode === 'gamma_p10' ? 'The selected local calibration uses this fitted percentile as the payout trigger, rounded to 0.001 mm.' : 'The selected fixed payout threshold is retained separately from this calibration.'}`));
   target.append(el('p', '', `Payout per hectare is ${money(r.pricing.maximumPerHaBaseUnits)} USDC only when simulated seasonal rainfall is strictly below ${r.parameters.threshold_mm} mm; equality pays zero. All ${r.parameters.hectares} hectares share one index.`));
   target.append(el('p', '', 'Premium = average simulated payout + term rate × max(99.5% pool VaR − expected pool loss, 0) / hectares + operating fee + explicit oracle-failure allowance. USDC calculations retain six-decimal base units; headline values are displayed to two decimals. No rate is registered or approved automatically.'));
   target.append(el('h4', '', 'Sampling noise is not climate uncertainty'));
@@ -317,7 +332,8 @@ async function loadSavedSources() {
     for (const r of histories) $('sim-snapshot').append(new Option(`${r.station} · ${r.parameter} · ${r.start_month} → ${r.end_month_exclusive} · ${r.snapshot_id.slice(2,10)}`,r.snapshot_id));
     if ([...$('sim-snapshot').options].some(o=>o.value===selected)) $('sim-snapshot').value=selected;
     if (!$('sim-snapshot').value) {
-      const preferred = histories.find(r => r.station === 'ET_ADAMA' && r.start_month <= '1985-06' && r.end_month_exclusive >= '2025-10');
+      const covers = r => r.start_month <= '1985-06' && r.end_month_exclusive >= '2025-10';
+      const preferred = histories.find(r => r.station === 'ET_TEAM_BOX' && covers(r)) || histories.find(r => r.station === 'ET_ADAMA' && covers(r));
       if (preferred) $('sim-snapshot').value = preferred.snapshot_id;
     }
     if (state.report && selected !== $('sim-snapshot').value) stale();
@@ -332,7 +348,7 @@ $('sim-snapshot').addEventListener('change',sourceControls);
 $('sim-source').addEventListener('change',()=>{sourceControls();void loadSavedSources();});
 window.addEventListener('cropguard:mode',e=>{if(e.detail.mode==='research_preview'){$('sim-source').value='bundled_era5';sourceControls();feedback('Included ERA5-Land history is ready. Review the settings, then run the simulation.');}});
 $('sim-threshold-mode').addEventListener('change',()=>{
-  $('sim-threshold').value = $('sim-threshold-mode').value === 'fixed' ? '297.29' : state.report?.modelFit?.tenthPercentileMm?.toFixed(3) || '170.678';
+  $('sim-threshold').value = $('sim-threshold-mode').value === 'fixed' ? '297.29' : state.report?.modelFit?.tenthPercentileMm?.toFixed(3) || '297.289';
   thresholdControls();
 });
 $('refresh-simulation-sources').onclick=()=>void loadSavedSources();

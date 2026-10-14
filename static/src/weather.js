@@ -4,8 +4,8 @@ const $ = id => document.getElementById(id);
 const state = {busy: false, snapshot: null, report: null, stale: false, hosting: null, hostingPromise: null, datesEdited: false};
 const mm = value => value === null || value === undefined ? '—' : new Intl.NumberFormat('en', {maximumFractionDigits:3}).format(value / 1000);
 const labels = {drought_triggered:'Below the rainfall trigger', no_trigger:'No rainfall trigger', provisional_data:'Provisional · refresh later', waiting_for_complete_months:'Season not complete', incomplete_or_conflicting_data:'Incomplete or conflicting data'};
-const era5Providers = new Set(['era5_land', 'era5_land_timeseries']);
-const era5Parameters = new Set(['era5_land:total_precipitation', 'era5_land_timeseries:total_precipitation']);
+const era5Providers = new Set(['era5_land', 'era5_land_timeseries', 'era5_land_monthly']);
+const era5Parameters = new Set(['era5_land:total_precipitation', 'era5_land_timeseries:total_precipitation', 'era5_land_monthly:total_precipitation']);
 function el(tag, className, text) { const n=document.createElement(tag); if(className)n.className=className; if(text!==undefined)n.textContent=text; return n; }
 function feedback(text, error=false) { $('weather-feedback').textContent=text; $('weather-feedback').dataset.error=String(error); }
 function isPreview() { return document.documentElement.dataset.cropguardMode === 'research_preview'; }
@@ -37,7 +37,7 @@ function configurePreview() {
     $('weather-form').hidden=true;
     $('weather-history-form').hidden=true;
     $('weather-jobs').hidden=true;
-    document.querySelector('.weather-intro').textContent='Inspect the verified ERA5-Land history used by this demonstration. The Adama grid point covers 1985–2025. Historical rainfall is reanalysis data; Gamma trials and test payments are simulated.';
+    document.querySelector('.weather-intro').textContent='Inspect the verified ERA5-Land history used by this demonstration. It is the team’s rainfall series: June–September 1985–2025, averaged over the land cells of 3–15°N, 33–48°E. Historical rainfall is reanalysis data; Gamma trials and test payments are simulated.';
     $('weather-load-saved').disabled=true;
     $('weather-load-saved').hidden=true;
     document.querySelector('.weather-history-settings').hidden=true;
@@ -122,7 +122,8 @@ async function refreshList(selectId) {
 function renderHostedSourceLinks() {
   if(!isHostedDemo())return;
   const id=$('weather-dataset-select').value, root=el('article','panel');
-  root.append(el('h3','','Saved ERA5-Land evidence'),el('p','','The source history contains 492 months, January 1985 through December 2025, for the Adama grid point. The pricing model uses 41 June–September seasons.'));
+  root.append(el('h3','','Saved ERA5-Land evidence'),el('p','','The team’s rainfall series holds 164 months: June to September of every year from 1985 to 2025, each the plain average over the land cells of 3–15°N, 33–48°E in the ERA5-Land monthly product. The pricing model uses its 41 seasons.'),
+    el('p','small','In September 2022 and June to September 2023 the monthly product is 36–50% of the ERA5-Land hourly series at the two grid points that were compared. The 2023 season, the only one below the trigger, may therefore be understated. The series is used as supplied.'));
   if(/^0x[0-9a-f]{64}$/.test(id)) {
     const actions=el('div','button-row');
     actions.append(actionLink('Download monthly CSV',`/api/weather/datasets/${id}/csv`,'cropguard-era5-monthly.csv'),actionLink('Open source manifest',`/api/weather/datasets/${id}`));

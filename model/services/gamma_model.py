@@ -1,7 +1,7 @@
 """Strictly positive Gamma MLE and inverse CDF, using only the Python standard library.
 
-The presentation does not supply its original R source or full-precision fit.
-This is a disclosed new reproducible calibration, not a reconstruction of it.
+Exact maximum likelihood, kept for research comparisons. The pricing engine fits the
+Gamma the way the team's R script does (MASS::fitdistr), through r_compat.
 """
 from __future__ import annotations
 import math

@@ -2,17 +2,17 @@
 
 **Open it: https://gopalinternship-unibasel.github.io/cropguard-demo/**
 
-CropGuard demonstrates rainfall-index crop insurance for a research grid point at Adama, Ethiopia. This repository holds the published site only. It is a static site served by GitHub Pages: there is no server, no account and no database, and nothing you do on it is sent anywhere.
+CropGuard demonstrates rainfall-index crop insurance priced on the team's rainfall series: June–September rainfall averaged over the land cells of 3–15°N, 33–48°E, the area around Ethiopia. This repository holds the published site only. It is a static site served by GitHub Pages: there is no server, no account and no database, and nothing you do on it is sent anywhere.
 
 ## What is real, what is computed, what is recorded
 
 | Part | What you are looking at |
 |---|---|
-| Rainfall history | Real. Copernicus ERA5-Land reanalysis for the grid point 8.5°N, 39.3°E, monthly totals for 1985–2025. It is gridded reanalysis, not a rain gauge. |
-| Pricing lab | Computed in your browser. The project's own Python model files run on [Pyodide](https://pyodide.org) (Python compiled to WebAssembly). The Gamma rainfall trials are simulations, not observations. |
-| Guided demo | Recorded. Each of the nine steps replays the response that a real run produced on a private test blockchain (Anvil, chain 31337) on 5 October 2026, run `20261005T042357Z-06e044fe6a64`. Nothing is executed while you click, and each browser tab has its own replay. |
+| Rainfall history | Real. The team's series: Copernicus ERA5-Land monthly reanalysis, June–September 1985–2025, each month the plain average over the 16,679 land cells of 3–15°N, 33–48°E. The area extends beyond Ethiopia. It is gridded reanalysis, not a rain gauge. In September 2022 and June–September 2023 the monthly product is 36–50% of the ERA5-Land hourly series at the two grid points compared, so the 2023 season may be understated; the series is used as supplied. |
+| Pricing lab | Computed in your browser. The project's own Python model files run on [Pyodide](https://pyodide.org) (Python compiled to WebAssembly). The Gamma fit and the random draws reproduce the team's R script (`CropGuard_MC.R`): with the defaults the lab shows its trigger of 297.29 mm, 1,013 of 10,000 trials below it, a premium of 30.18 USDC per hectare and its basis-risk matrix. The trials are simulations, not observations. |
+| Guided demo | Recorded. Each of the nine steps replays the response that a real run produced on a private test blockchain (Anvil, chain 31337) on 14 October 2026, run `20261014T051014Z-8a919a6b64c2`. Nothing is executed while you click, and each browser tab has its own replay. |
 | Tokens and payments | Valueless test tokens. No money, no insurance cover, no offer. |
-| Celo Sepolia test round | Read from a public test chain each time the page loads. The same two-hectare policy was run once on Celo Sepolia on 13 October 2026. Its rainfall report came from CropGuard's Chainlink CRE workflow, run in Chainlink's simulator on one computer and sent through Chainlink's mock forwarder contract. No Chainlink oracle network took part, and the mock forwarder checks no signatures. |
+| Celo Sepolia test round | Read from a public test chain each time the page loads. An earlier version of the two-hectare policy, priced on the Adama grid-point series that the site used before, was run once on Celo Sepolia on 13 October 2026. Its rainfall report came from CropGuard's Chainlink CRE workflow, run in Chainlink's simulator on one computer and sent through Chainlink's mock forwarder contract. No Chainlink oracle network took part, and the mock forwarder checks no signatures. The round is kept as it was recorded on-chain. |
 
 The 2023 season used in the guided demo is one of the seasons the model was fitted on, so it is an illustration and not an out-of-sample test.
 
@@ -30,16 +30,16 @@ The 2023 season used in the guided demo is one of the seasons the model was fitt
 | `index.html`, `static/` | The CropGuard web page. Wording that described a shared server run was changed to describe a recorded replay. |
 | `static-site/shim.js` | Answers the page's `/api/` requests from the recorded data and the in-browser model. |
 | `static-site/sim-worker.js`, `model/adapter.py` | Load Pyodide and run the pricing model in a Web Worker. |
-| `model/services/` | The pricing model: byte-for-byte copies from the CropGuard source at commit `fb75a4a` (hashes in `model/SOURCE.json`). |
+| `model/services/` | The pricing model: byte-for-byte copies from the CropGuard source at commit `334cc4a` (hashes in `model/SOURCE.json`). |
 | `data/replay.json`, `data/files/` | The recorded run: every public response before and after each step, including the archived rainfall evidence. |
 | `data/model-inputs.json` | The verified monthly ERA5-Land history the model reads. |
 | `static-site/onchain.js`, `data/onchain-round.json` | The test-round panel on the Guided demo page and the public record of that round: contract addresses, transaction hashes and the figures the page compares with the chain. |
-| `api/weather/oracle/` | The frozen rainfall evidence file the workflow fetched: 122 daily ERA5-Land values for June to September 2023 with their hashes. Its path and bytes must not change. |
+| `api/weather/oracle/` | The frozen rainfall evidence file the workflow fetched: 122 daily ERA5-Land values at the Adama grid point for June to September 2023, with their hashes. Its path and bytes must not change. |
 | `pyodide/` | Pyodide 0.29.5, unmodified. |
 
 ## Credits and licences
 
-- Rainfall history: contains modified Copernicus Climate Change Service information (ERA5-Land hourly time series, dataset `reanalysis-era5-land-timeseries`). Neither the European Commission nor ECMWF is responsible for any use made of it.
+- Rainfall history: contains modified Copernicus Climate Change Service information (ERA5-Land monthly averaged reanalysis, dataset `reanalysis-era5-land-monthly-means`; the Celo Sepolia round's evidence file uses the ERA5-Land hourly time series, dataset `reanalysis-era5-land-timeseries`). Neither the European Commission nor ECMWF is responsible for any use made of it.
 - CropGuard code: MIT licence, see `LICENSE`.
 - Pyodide: Mozilla Public License 2.0, see `pyodide/NOTICE.txt`.
 

@@ -1,9 +1,11 @@
 """Off-chain Monte Carlo research. Never writes products or oracle observations.
 
 Presentation profile: 41 seasons, positive Gamma, 99.5% VaR-buffer capital cost.
-The precise baseline and original R run are not supplied. Bootstrap remains an
-explicit research alternative, not the presentation's calibration. All units share ONE index:
-hectares are not independent Bernoulli risks and collateral stays at full exposure.
+The Gamma method reproduces the team's R script (CropGuard_MC.R): MASS::fitdistr,
+set.seed(seed), rgamma() and the rnorm() spatial noise of its basis-risk section,
+through the R-compatible port in r_compat. Bootstrap remains an explicit research
+alternative. All units share ONE index: hectares are not independent Bernoulli
+risks and collateral stays at full exposure.
 """
 from __future__ import annotations
 
@@ -15,12 +17,15 @@ import random
 from decimal import Decimal, ROUND_CEILING
 from statistics import NormalDist, mean
 from .actuarial import binary_price
-from .gamma_model import fit_gamma, gamma_quantile, gamma_cdf
+from .gamma_model import gamma_quantile, gamma_cdf
+from .r_compat import RRandom, fitdistr_gamma, sd as r_sd
 
 from .pricing import token_units, wilson_upper
 from .weather import DataUnavailable, canonical_json, month_range, mm_x1000, sha256_hex
 
-ENGINE_VERSION = "gamma-research"
+ENGINE_VERSION = "gamma-r-compatible-v1"
+# CropGuard_MC.R: spatial_sd <- 0.3 * sd(rain_series), a fraction of local variability.
+SPATIAL_NOISE_FRACTION = 0.3
 
 
 def parse_csv(text: str, *, label: str, kind: str = "satellite", notes: str = "") -> dict:
@@ -179,10 +184,17 @@ def run_simulation(dataset: dict, options: dict) -> tuple[dict, list[float]]:
                 "gamma", 297290, 150000000, 100, 1000, 1000000, 500000, 10000, 0, "fixed"):
             raise ValueError("Presentation profile terms differ; use research mode for alternative scenarios.")
     totals = [s["rainfallMm"] for s in seasons]
-    rng = random.Random(seed)
     model_fit: dict = {"kind": "empirical_complete_season_resampling", "completeSeasons": len(totals)}
+    basis = None
     if method == "gamma":
-        model_fit = {**fit_gamma(totals), "completeSeasons": len(totals)}
+        fit = fitdistr_gamma(totals)
+        model_fit = {"kind": "gamma_r_fitdistr", "shape": fit["shape"], "scaleMm": 1 / fit["rate"],
+                     "ratePerMm": fit["rate"], "zeroSeasonProbability": 0.0,
+                     "fitMethod": "MASS::fitdistr(x, \"gamma\") as in the team's R script: moment start, BFGS with "
+                                  "parscale c(1, rate), numerical gradient. Ported to Python; agrees with R 4.6.1 to about ten digits.",
+                     "logLikelihood": fit["logLikelihood"], "optimizerCounts": {"function": fit["functionCount"], "gradient": fit["gradientCount"]},
+                     "randomNumberGenerator": "R default: Mersenne-Twister, normal by Inversion, rgamma by Ahrens-Dieter GD; set.seed(seed)",
+                     "completeSeasons": len(totals)}
         q10 = gamma_quantile(.1, model_fit["shape"], model_fit["scaleMm"])
         model_fit["tenthPercentileMm"] = q10
         # Quantile calibration is explicit. Research cannot silently rewrite terms.
@@ -195,12 +207,30 @@ def run_simulation(dataset: dict, options: dict) -> tuple[dict, list[float]]:
             threshold = threshold_x1000/1000
             options = {**options, "requested_threshold_mm": options["threshold_mm"], "threshold_mm": format(Decimal(threshold_x1000)/1000, "f")}
         model_fit["configuredThresholdProbability"] = gamma_cdf(threshold, model_fit["shape"], model_fit["scaleMm"])
-        base_draws = [rng.gammavariate(model_fit["shape"], model_fit["scaleMm"]) for _ in range(n)]
+        # Same stream as the R script: rgamma(n) for the station, then rnorm(n) for the farm.
+        r_rng = RRandom(seed)
+        base_draws = r_rng.rgamma(n, fit["shape"], fit["rate"])
+        spatial_sd = SPATIAL_NOISE_FRACTION * r_sd(totals)
+        noise = r_rng.rnorm(n, 0.0, spatial_sd)
     else:
+        rng = random.Random(seed)
         base_draws = [totals[min(int(rng.random()*len(totals)), len(totals)-1)] for _ in range(n)]
     draws = [stressed_rainfall(r, stress_bps) for r in base_draws]
     # The exact deployed rule is a strict threshold; equality never triggers.
     triggers = sum(r < threshold for r in draws)
+    if method == "gamma":
+        farm = [max(0.0, r + e) for r, e in zip(draws, noise)]
+        both = sum(r < threshold and f < threshold for r, f in zip(draws, farm))
+        station_only = triggers - both
+        farm_only = sum(f < threshold for f in farm) - both
+        basis = {"kind": "station_index_against_simulated_farm",
+                 "spatialNoiseSdMm": spatial_sd, "spatialNoiseFractionOfSeasonalSd": SPATIAL_NOISE_FRACTION,
+                 "matrix": {"payoutAndDrought": both, "payoutNoDrought": station_only,
+                            "droughtNoPayout": farm_only, "neitherPayoutNorDrought": n - both - station_only - farm_only},
+                 "accuracy": (n - station_only - farm_only) / n,
+                 "falseNegativeRate": farm_only / n, "falsePositiveRate": station_only / n,
+                 "method": "Farm rainfall = max(0, index rainfall + normal noise with sd 0.3 x the sample sd of the seasonal totals), "
+                           "drawn after the index trials as in the team's R script. The noise model is the script's assumption, not measured farm data."}
     historical_triggers = sum(s["rainfallMmX1000"] < threshold_x1000 for s in seasons)
     price = binary_price(triggers, n, max_unit, hectares, capital_bps, fee, failure)
     capital = int(price["capitalCostPerHaBaseUnits"])
@@ -280,7 +310,7 @@ def run_simulation(dataset: dict, options: dict) -> tuple[dict, list[float]]:
         "lossDistribution": [{"payoutBaseUnits": "0", "count": n-triggers}, {"payoutBaseUnits": str(maximum), "count": triggers}],
         "convergence": convergences, "sensitivity": sensitivity,
         "seasons": [{**s, "triggered": s["rainfallMmX1000"] < threshold_x1000} for s in seasons],
-        "walkForwardValidation": validation,
+        "walkForwardValidation": validation, "basisRisk": basis,
         "meanWalkForwardBrierScore": mean(x["brierScore"] for x in validation),
         "warnings": warnings,
     }

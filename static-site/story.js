@@ -610,6 +610,8 @@ function countTo(el, from, to, animate) {
     if (t < 1) requestAnimationFrame(tick);
   };
   requestAnimationFrame(tick);
+  // A background tab gets no animation frames; the final value must still land.
+  setTimeout(() => { if (counting.get(el) === token) el.textContent = fmt(to); }, duration + 100);
 }
 
 // ---- Shared pieces ---------------------------------------------------------------------
@@ -718,6 +720,7 @@ function flow(svg, path, label, delay = 0) {
     if (alive) requestAnimationFrame(tick); else path.classList.remove('active');
   };
   requestAnimationFrame(tick);
+  setTimeout(() => { dots.forEach(dot => dot.remove()); path.classList.remove('active'); }, delay + duration + 5 * 120 + 300);
   if (label) {
     setTimeout(() => {
       const point = path.getPointAtLength(length * 0.5);

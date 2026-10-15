@@ -167,5 +167,19 @@
   document.addEventListener('click', redirectLink, true);
   document.addEventListener('auxclick', redirectLink, true);
 
-  window.cropguardStatic = {warmModel, replay, currentStep: () => loaded ? step(loaded) : 0};
+  // The season story (story.js) rewinds and jumps through the recording, and reads the
+  // recorded state at a step without a request. Seeking changes only this tab's replay.
+  function seek(value) {
+    if (!loaded) throw new Error('The recorded demonstration has not loaded yet.');
+    if (!Number.isInteger(value) || value < 0 || value > loaded.actions.length) throw new Error('No such recorded step.');
+    setStep(loaded, value);
+  }
+  function recordedValue(path, at) {
+    if (!loaded) return undefined;
+    const entry = lookup(loaded, new URL(path, location.origin), at ?? step(loaded));
+    return entry?.json;
+  }
+  const steps = () => loaded ? loaded.actions.map(({action, params}) => ({action, params})) : [];
+
+  window.cropguardStatic = {warmModel, replay, currentStep: () => loaded ? step(loaded) : 0, seek, recorded: recordedValue, steps};
 })();

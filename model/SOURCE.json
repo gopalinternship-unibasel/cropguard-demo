@@ -1,6 +1,6 @@
 {
   "note": "The files in model/services/ are byte-for-byte copies from the CropGuard source at this commit. adapter.py is specific to this site.",
-  "sourceCommit": "b16bc87880b20ecf3d5b4c5324bea439e68cac1e",
+  "sourceCommit": "1c5ef94c274b8f605f88c07a08a16404383b4f61",
   "sha256": {
     "application/services/__init__.py": "d513bac120837594ff27d6d920cd7a58048b57697435c9951c956e0127d701b2",
     "application/services/simulation.py": "761e6539d6b4646a994c63fe3520bac2524b597e86501dec126ef4b9ea5ad9ca",

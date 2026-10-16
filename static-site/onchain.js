@@ -128,7 +128,7 @@ function render(section, round, live, error) {
     ? item(null, `No rainfall report is on-chain for this round. The ${evidenceLink} is available.`) : live ? [
     item(live.replayed === live.rainfall, `The ${live.rows} ${live.rowKind} values in the ${evidenceLink} add up to ${text(millimetres(live.replayed))} mm, the amount on-chain.`),
     item(live.evidence.evidenceHash === live.evidenceHash, `The evidence hash on-chain is the one in that file (${text(short(live.evidenceHash))}).`),
-    item(live.evidence.sourceHash === live.sourceHash, `The source hash on-chain is the one in that file (${text(short(live.sourceHash))}); the guided demo above shows the same hash.`),
+    item(live.evidence.sourceHash === live.sourceHash, `The source hash on-chain is the one in that file (${text(short(live.sourceHash))}).`),
     item(live.rainfall < BigInt(round.thresholdMmX1000) === (live.claim > 0n), `${text(millimetres(live.rainfall))} mm is below the ${text(millimetres(BigInt(round.thresholdMmX1000)))} mm trigger, and the policy was paid its full ${text(tokens(live.claim))} ${text(round.tokenSymbol)}.`),
     item(live.healthy && live.locked === 0n, 'The pool passes its accounting check and no collateral is still locked.'),
   ].join('') : item(null, `Not checked: the test network did not answer. The ${evidenceLink} is still available.`);

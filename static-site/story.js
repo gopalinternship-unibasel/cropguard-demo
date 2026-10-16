@@ -146,9 +146,9 @@ async function start() {
   const t0 = snapshot(0).time, review = Number(m.reportNotBefore) + Number(m.challengePeriod);
   ctx.timeline = {
     points: [t0, Number(m.fundingClose), Number(m.coverageStart), Number(m.coverageEnd), Number(m.reportNotBefore), review],
-    weights: [2, 0.9, 2.4, 2, 1.4],
+    weights: [2, 0.9, 2.4, 1.3, 1.3],
     labels: ['Funding', 'Sales', `Cover · ${monthFormat.format(new Date(m.coverageStart * 1000))}–${monthFormat.format(new Date((m.coverageEnd - 1) * 1000))} ${new Date(m.coverageStart * 1000).getUTCFullYear()}`,
-      `${Math.round((m.reportNotBefore - m.coverageEnd) / 86400)}-day publication lag`, `${count(Math.round(m.challengePeriod / 86400))}-day review`],
+      `${Math.round((m.reportNotBefore - m.coverageEnd) / 86400)}-day wait for data`, `${count(Math.round(m.challengePeriod / 86400))}-day review`],
     coverYear: new Date(m.coverageStart * 1000).getUTCFullYear(),
   };
   ctx.lagDays = Math.round((m.reportNotBefore - m.coverageEnd) / 86400);
@@ -466,7 +466,7 @@ function stepCaption(i) {
     `The test-chain clock moves to the funding cutoff, ${day(m.fundingClose)}. The pool holds the ${fmt(s.capital)} it needs.`,
     `Policy sales open on fixed terms: ${fmt(ctx.maxPerHa)} per hectare if June–September rainfall is below ${ctx.triggerShort} mm, for a premium of ${fmt(ctx.premiumExact, 6)} per hectare.`,
     `The farmer buys ${count(ctx.units)} hectares for ${fmt(s.policy?.premium ?? 0)} test tokens. In the same transaction the pool locks the full ${fmt(ctx.maxPayout)}-token maximum payout.`,
-    `The cover ran from June to September ${ctx.timeline.coverYear}. After the ${ctx.lagDays}-day publication lag, reporting opens on ${day(m.reportNotBefore)}.`,
+    `The cover ran from June to September ${ctx.timeline.coverYear}. After a ${ctx.lagDays}-day wait for the rainfall data, reporting opens on ${day(m.reportNotBefore)}.`,
     `A local test oracle reports the replayed June–September ${ctx.year} rainfall: ${fmt(s.rainfall)} mm. A ${count(ctx.reviewDays)}-day review period starts.`,
     `${initial(count(ctx.reviewDays))} days pass and nobody challenges the report.`,
     `The rainfall result is final: ${fmt(s.rainfall)} mm, below the ${ctx.triggerShort} mm trigger.`,
